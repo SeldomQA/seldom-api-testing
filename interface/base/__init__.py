@@ -8,7 +8,7 @@ from db_fixture import test_data
 class TestCase(unittest.TestCase):
 
     @classmethod
-    def setUpClass(cls) -> None:
+    def setUpClass(cls):
         cls.host_url = "http://127.0.0.1:8000/api"
 
     @staticmethod
@@ -16,7 +16,7 @@ class TestCase(unittest.TestCase):
         """
         post请求
         """
-        r = requests.post(url, data=None, json=None, **kwargs)
+        r = requests.post(url, data, json, **kwargs)
         return r
 
     @staticmethod
@@ -24,7 +24,7 @@ class TestCase(unittest.TestCase):
         """
         get请求
         """
-        r = requests.get(url, params=None, **kwargs)
+        r = requests.get(url, params, **kwargs)
         return r
 
 
