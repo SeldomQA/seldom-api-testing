@@ -15,5 +15,5 @@ if __name__ == "__main__":
                             description='运行环境：MySQL(PyMySQL), Requests, unittest ')
     # 指定测试用例为当前文件夹下的 interface 目录
     case = defaultTestLoader.discover('./interface', pattern='*_test.py')
-    runner.run(case, rerun=0, save_last_run=False)
+    runner.run(case)
     fp.close()

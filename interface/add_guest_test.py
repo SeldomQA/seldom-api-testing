@@ -1,12 +1,11 @@
-from base import TestCase
-from base import run
+from common import TestCase, run
 
 
 class AddGuessTest(TestCase):
     ''' 添加嘉宾 '''
 
     def setUp(self):
-        self.base_url = self.host_url + "/add_guest/"
+        self.base_url = self.host + "/api/add_guest/"
 
     def tearDown(self):
         print(self.result)
@@ -64,7 +63,7 @@ class AddGuessTest(TestCase):
         payload = {'eid':1,'realname':'tom','phone':13511001199}
         r = self.post(self.base_url,data=payload)
         self.result = r.json()
-        self.assertEqual(self.result['status'], 200)
+        self.assertEqual(self.result['status'], 10200)
         self.assertEqual(self.result['message'], 'add guest success')
 
 

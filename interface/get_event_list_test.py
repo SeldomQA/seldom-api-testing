@@ -1,5 +1,5 @@
-from base import TestCase
-from base import run
+from common import TestCase
+from common import run
 
 
 class GetEventListTest(TestCase):
@@ -7,7 +7,7 @@ class GetEventListTest(TestCase):
 
 
     def setUp(self):
-        self.base_url = "http://127.0.0.1:8000/api/get_event_list/"
+        self.base_url = self.host + "/api/get_event_list/"
 
     def tearDown(self):
         print(self.result)

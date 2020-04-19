@@ -1,12 +1,12 @@
-from base import TestCase
-from base import run
+from common import TestCase
+from common import run
 
 
 class GetGuestListTest(TestCase):
     ''' 获得嘉宾列表 '''
 
     def setUp(self):
-        self.base_url = "http://127.0.0.1:8000/api/get_guest_list/"
+        self.base_url = self.host + "/api/get_guest_list/"
 
     def tearDown(self):
         print(self.result)
@@ -31,7 +31,7 @@ class GetGuestListTest(TestCase):
         self.result = r.json()
         self.assertEqual(self.result['status'], 200)
         self.assertEqual(self.result['message'], 'success')
-        self.assertEqual(self.result['data'][0]['realname'],'alen')
+        self.assertEqual(self.result['data'][0]['realname'], 'tom')
         self.assertEqual(self.result['data'][0]['phone'],'13511001100')
 
     def test_get_event_list_eid_phone_null(self):

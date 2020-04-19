@@ -1,12 +1,14 @@
-from base import TestCase
-from base import run
+from common import TestCase
+from common import run
+from ddt import ddt, data, file_data, unpack
 
 
+@ddt
 class AddEventTest(TestCase):
     ''' 添加发布会 '''
 
     def setUp(self):
-        self.base_url = self.host_url + "/add_event/"
+        self.base_url = self.host + "/api/add_event/"
 
     def tearDown(self):
         print(self.result)
@@ -48,7 +50,7 @@ class AddEventTest(TestCase):
         payload = {'eid': 11, 'name': '一加4手机发布会', 'limit': 2000, 'address': "深圳宝体", 'start_time': '2017-05-10 12:00:00'}
         r = self.post(self.base_url, data=payload)
         self.result = r.json()
-        self.assertEqual(self.result['status'], 200)
+        self.assertEqual(self.result['status'], 10200)
         self.assertEqual(self.result['message'], 'add event success')
 
 

@@ -1,5 +1,12 @@
 
 
+class BaseConfig:
+    """
+    基本配置
+    """
+    host = "http://127.0.0.1:8000"
+
+
 class MySQLConfig:
     """
     MySQL数据库连接配置
