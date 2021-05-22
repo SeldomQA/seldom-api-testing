@@ -1,4 +1,4 @@
-# pyrequest
+# pyrequest2
 
 介绍：
   发布会签到系统：http://github.com/defnngj/guest3
@@ -11,8 +11,8 @@
 
 Python版本与依赖库：
   * python3.5+ :https://www.python.org/
-  * Requests : https://github.com/kennethreitz/requests
-  * PyMySQL : https://github.com/PyMySQL/PyMySQL
+  * seldom: https://github.com/SeldomQA/seldom
+  * PyMySQL: https://github.com/PyMySQL/PyMySQL
 
 
 ```MySQL
