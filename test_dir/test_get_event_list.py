@@ -25,8 +25,8 @@ class GetEventListTest(seldom.TestCase):
         ("关键字‘abc’查询", "abc", 10022, "query result is empty"),
         ("关键字‘发布会’模糊查询", "发布会", 10200, "success"),
     ])
-    def test_get_by_name(self, _, eid, status, msg):
-        self.get(self.get_event_list, params={"name": eid})
+    def test_get_by_name(self, _, name, status, msg):
+        self.get(self.get_event_list, params={"name": name})
         self.assertStatusCode(200)
         self.assertPath("status", status)
         self.assertPath("message", msg)
@@ -36,4 +36,4 @@ class GetEventListTest(seldom.TestCase):
 
 
 if __name__ == "__main__":
-    seldom.main(base_url="http://127.0.0.1:8000", debug=True)
+    seldom.main(debug=True)

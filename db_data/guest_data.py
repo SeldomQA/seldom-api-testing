@@ -1,16 +1,19 @@
 import sys
 import time
+import random
 from seldom.testdata import get_now_time
 from seldom.utils import file_dir
 
 sys.path.append(file_dir())
 from base import ConnectDB
 
+number = random.randint(100000, 99999999)
+
 # 定义过去时间
-past_time = time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time()-100000))
+past_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time() - number))
 
 # 定义将来时间
-future_time = time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time()+10000))
+future_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time() + number))
 
 
 # create data
@@ -44,6 +47,14 @@ class GuestData(ConnectDB):
     def insert(self):
         self.db.init_table(datas)
 
+    def select(self):
+        result = self.db.select_data(table="sign_event", where={'name': '红米Pro发布会'})
+        return result
+
+    def delete(self):
+        self.db.delete_data(table="sign_event", where={"id": 1})
+
 
 if __name__ == '__main__':
     GuestData().insert()
+

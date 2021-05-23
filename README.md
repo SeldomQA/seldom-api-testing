@@ -11,7 +11,7 @@
 
 Python版本与依赖库：
   * python3.5+ :https://www.python.org/
-  * seldom: https://github.com/SeldomQA/seldom
+  * seldom2.1.0+: https://github.com/SeldomQA/seldom
   * PyMySQL: https://github.com/PyMySQL/PyMySQL
 
 
