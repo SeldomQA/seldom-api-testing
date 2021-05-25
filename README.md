@@ -1,22 +1,15 @@
 # pyrequest2
 
-介绍：
-  发布会签到系统：http://github.com/defnngj/guest3
-
-  它包含功能:
-  * 测试数据初始化，并对数据的插入做了封装。
-  * unittest单元测试框架运行测试
-  * HTMLTestRunner生成接口测试报告
+介绍： 这是一个基于 [Seldom2.1](https://github.com/SeldomQA/seldom) 测试框架实现的接口自动化项目。
 
 
-Python版本与依赖库：
-  * python3.5+ :https://www.python.org/
-  * seldom2.1.0+: https://github.com/SeldomQA/seldom
-  * PyMySQL: https://github.com/PyMySQL/PyMySQL
+被测试系统：为 [发布会签到系统](https://github.com/defnngj/guest3) 。
 
+|接口| URL | 请求方式|
+|:---|:---|:---|
+|添加发布会接口 | http://127.0.0.1:8000/api/add_event/ | POST |
+|查询发布会接口 | http://127.0.0.1:8000/api/get_event_list/ | GET |
+|添加嘉宾接口 | http://127.0.0.1:8000/api/add_guest/ | POST |
+|查询嘉宾接口 | http://127.0.0.1:8000/api/get_guest_list/ | GET |
+|嘉宾签到接口 | http://127.0.0.1:8000/api/user_sign/ | GET |
 
-```MySQL
-// MySQL初始化
-ALTER TABLE  `sign_event` CHANGE  `create_time`  `create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
-ALTER TABLE  `sign_guest` CHANGE  `create_time`  `create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
-```
