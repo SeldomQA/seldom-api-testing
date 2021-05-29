@@ -1,6 +1,6 @@
 # pyrequest2
 
-介绍： 这是一个基于 [Seldom2.1](https://github.com/SeldomQA/seldom) 测试框架实现的接口自动化项目。
+介绍： 这是一个基于 [Seldom](https://github.com/SeldomQA/seldom) 测试框架实现的接口自动化项目。
 
 
 被测试系统：为 [发布会签到系统](https://github.com/defnngj/guest3) 。

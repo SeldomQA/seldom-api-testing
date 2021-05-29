@@ -1,34 +1,24 @@
 import sys
-import time
-import random
-from seldom.testdata import get_now_time
+from seldom.testdata import get_now_time, get_past_time, get_future_time
 from seldom.utils import file_dir
 
 sys.path.append(file_dir())
 from base import ConnectDB
-
-number = random.randint(100000, 99999999)
-
-# 定义过去时间
-past_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time() - number))
-
-# 定义将来时间
-future_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time() + number))
 
 
 # create data
 datas = {
     'sign_event': [
         {'id': 1, 'name': '红米Pro发布会', '`limit`': 2000, 'status': 1, 'address': '北京会展中心',
-         'start_time': future_time, "create_time": get_now_time()},
+         'start_time': get_future_time(), "create_time": get_now_time()},
         {'id': 2, 'name': '可参加人数为0', '`limit`': 0, 'status': 1, 'address': '北京会展中心',
-         'start_time': future_time, "create_time": get_now_time()},
+         'start_time': get_future_time(), "create_time": get_now_time()},
         {'id': 3, 'name': '当前状态为0关闭', '`limit`': 2000, 'status': 0, 'address': '北京会展中心',
-         'start_time': future_time, "create_time": get_now_time()},
+         'start_time': get_future_time(), "create_time": get_now_time()},
         {'id': 4, 'name': '发布会已结束', '`limit`': 2000, 'status': 1, 'address': '北京会展中心',
-         'start_time': past_time, "create_time": get_now_time()},
+         'start_time': get_past_time(), "create_time": get_now_time()},
         {'id': 5, 'name': '小米5发布会', '`limit`': 2000, 'status': 1, 'address': '北京国家会议中心',
-         'start_time': future_time, "create_time": get_now_time()},
+         'start_time': get_future_time(), "create_time": get_now_time()},
     ],
     'sign_guest': [
         {'id': 1, 'realname': 'alen', 'phone': 13511001100, 'email': 'alen@mail.com', 'sign': 0, 'event_id': 1,
