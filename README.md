@@ -13,10 +13,12 @@ pip install -r requirements.txt
 ```shell
 mypro/
 ├── db_data/
-├── test_dir/
-│   ├── test_sample.py
+│   ├── base.py
+│   ├── xxx_data.py
 ├── test_data/
-│   ├── data.json
+│   ├── xxx.json
+├── test_dir/
+│   ├── test_xxx.py
 ├── reports/
 └── run.py
 ```
