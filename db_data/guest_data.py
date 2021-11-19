@@ -38,11 +38,11 @@ class GuestData(ConnectDB):
         self.db.init_table(datas)
 
     def select(self):
-        result = self.db.select_data(table="sign_event", where={'name': '红米Pro发布会'})
+        result = self.db.select(table="sign_event", where={'name': '红米Pro发布会'})
         return result
 
     def delete(self):
-        self.db.delete_data(table="sign_event", where={"id": 1})
+        self.db.delete(table="sign_event", where={"id": 1})
 
 
 if __name__ == '__main__':

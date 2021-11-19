@@ -7,7 +7,7 @@
     <meta name="generator" content="HTMLTestRunner 1.0.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="http://img.itest.info/popper.min1.14.7.js"></script>
     <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://img.itest.info/seldom.css">
 
@@ -93,7 +93,12 @@
     }
 
     /* -- report ------------------------------------------------------------------------ */
-    #show_detail_line {
+    .show_detail_line {
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .show_detail_button {
         margin-top: 3ex;
         margin-bottom: 1ex;
         margin-left: 10px;
@@ -101,7 +106,7 @@
         margin-right: 15px;
     }
 
-    #header_row {
+    .header_row {
         font-weight: bold;
         color: #606060;
         border-top-width: 10px;
@@ -109,7 +114,7 @@
         font-size: 15px;
     }
 
-    #total_row {
+    .total_row {
         font-weight: bold;
         background-color: #dee2e6;
     }
@@ -187,12 +192,17 @@
     .img {
         height: 100%;
         border-collapse: collapse;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        background-color: white;
     }
 
     .screenshots {
         z-index: 100;
         position: fixed;
-        height: 80%;
+        max-height: 80%;
+        max-width: 80%;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -296,7 +306,7 @@
                 }
                 changeImg(index++);
             }
-            imgyuan.style.width = 25 * len + "px";
+            imgyuan.style.width = 30 * len + "px";
             //对应圆圈和图片同步
             function changeImg(index) {
                 var list = obj1.getElementsByTagName('img');
@@ -456,12 +466,12 @@
                                 
                                 <tr>
                                     <td> Start Time</td>
-                                    <td class="text-right">2021-05-22 20:37:24</td>
+                                    <td class="text-right">2021-11-19 21:46:59</td>
                                 </tr>
                                 
                                 <tr>
                                     <td> Duration</td>
-                                    <td class="text-right">0:00:00.209896</td>
+                                    <td class="text-right">0:00:00.273004</td>
                                 </tr>
                                 
                                 <tr>
@@ -490,8 +500,8 @@
         </div>
     </div>
 </div>
-    <div style="margin-left: 10px; margin-top: 30px; margin-bottom: 60px;">
-    <p id='show_detail_line' >
+    <div class="show_detail_line">
+    <p class="show_detail_button">
         <a href='javascript:showCase(0, 1)' class="btn btn-dark btn-sm">Summary</a>
         <a href='javascript:showCase(1, 1)' class="btn btn-success btn-sm">Pass</a>
         <a href='javascript:showCase(2, 1)' class="btn btn-warning btn-sm">Failed</a>
@@ -507,7 +517,7 @@
             <h4 class="header-title">Result</h4>
             <table class="table mb-0">
                 <thead>
-                    <tr id='header_row'>
+                    <tr class="header_row">
                         <td>Test Group/Test case</td>
                         <td>description</td>
                         <td>Duration</td>
@@ -540,7 +550,7 @@
         <div>参数化 [with d={'eid': 1, 'name': '一加4发布会', 'li...msg': 'event id already exists'}]</div>
     </td>
     <td style="color: #495057">
-        <div>0.01 s</div>
+        <div>0.02 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1023,7 +1033,7 @@ type: json
 url: http://127.0.0.1:8000/api/get_event_list/         method: GET
 ----------- Response 🛬️ -------------
 type: json
-{'status': 10200, 'message': 'success', 'data': {'eid': 1, 'name': '红米Pro发布会', 'limit': 2000, 'status': True, 'address': '北京会展中心', 'start_time': '2021-05-22T23:24:04'}}
+{'status': 10200, 'message': 'success', 'data': {'eid': 1, 'name': '红米Pro发布会', 'limit': 2000, 'status': True, 'address': '北京会展中心', 'start_time': '2023-12-29T01:32:58'}}
 
         </pre>
     </div>
@@ -1091,7 +1101,7 @@ type: json
 url: http://127.0.0.1:8000/api/get_event_list/         method: GET
 ----------- Response 🛬️ -------------
 type: json
-{'status': 10200, 'message': 'success', 'data': [{'eid': 1, 'name': '红米Pro发布会', 'limit': 2000, 'status': True, 'address': '北京会展中心', 'start_time': '2021-05-22T23:24:04'}, {'eid': 4, 'name': '发布会已结束', 'limit': 2000, 'status': True, 'address': '北京会展中心', 'start_time': '2021-05-21T16:50:44'}, {'eid': 5, 'name': '小米5发布会', 'limit': 2000, 'status': True, 'address': '北京国家会议中心', 'start_time': '2021-05-22T23:24:04'}, {'eid': 11, 'name': '一加4手机发布会', 'limit': 2000, 'status': True, 'address': '深圳宝体', 'start_time': '2017-05-10T12:00:00'}]}
+{'status': 10200, 'message': 'success', 'data': [{'eid': 1, 'name': '红米Pro发布会', 'limit': 2000, 'status': True, 'address': '北京会展中心', 'start_time': '2023-12-29T01:32:58'}, {'eid': 4, 'name': '发布会已结束', 'limit': 2000, 'status': True, 'address': '北京会展中心', 'start_time': '2021-01-14T23:49:39'}, {'eid': 5, 'name': '小米5发布会', 'limit': 2000, 'status': True, 'address': '北京国家会议中心', 'start_time': '2024-12-23T12:20:52'}, {'eid': 11, 'name': '一加4手机发布会', 'limit': 2000, 'status': True, 'address': '深圳宝体', 'start_time': '2017-05-10T12:00:00'}]}
 
         </pre>
     </div>
@@ -1540,7 +1550,7 @@ type: json
         <div>参数为空</div>
     </td>
     <td style="color: #495057">
-        <div>0.01 s</div>
+        <div>0.00 s</div>
     </td>
     <td colspan='5' align='center'>
     <!--css div popup start-->
@@ -1566,14 +1576,14 @@ type: json
     <td></td>
 </tr>
 
-                <tr id='total_row'>
+                <tr class="total_row">
                     <td>Total</td>
                     <td> </td>
                     <td> </td>
                     <td>29</td>
                     <td class="text text-success">29</td>
-                    <td class="text text-danger">0</td>
                     <td class="text text-warning">0</td>
+                    <td class="text text-danger">0</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
