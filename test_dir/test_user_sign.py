@@ -10,6 +10,7 @@ class UserSignTest(seldom.TestCase):
 
     @file_data("user_sign.xlsx", sheet="Sheet1", line=2)
     def test_user_sign(self, eid, phone, status, msg):
+        """ 用户签到-参数化 """
         self.post(self.user_sign, data={"eid": int(eid), "phone": int(phone)})
         self.assertPath("status", int(status))
         self.assertPath("message", msg)

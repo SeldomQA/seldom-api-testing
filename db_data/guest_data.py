@@ -1,13 +1,11 @@
-import sys
 from seldom.testdata import get_now_time, get_past_time, get_future_time
-from seldom.utils import file_dir
-
-sys.path.append(file_dir())
-from base import ConnectDB
+from seldom.utils import file
+file.add_to_path(file.dir_dir)
+from db_data.base import ConnectDB
 
 
 # create data
-datas = {
+db_data = {
     'sign_event': [
         {'id': 1, 'name': '红米Pro发布会', '`limit`': 2000, 'status': 1, 'address': '北京会展中心',
          'start_time': get_future_time(), "create_time": get_now_time()},
@@ -35,7 +33,7 @@ datas = {
 class GuestData(ConnectDB):
 
     def insert(self):
-        self.db.init_table(datas)
+        self.db.init_table(db_data)
 
     def select(self):
         result = self.db.select(table="sign_event", where={'name': '红米Pro发布会'})
