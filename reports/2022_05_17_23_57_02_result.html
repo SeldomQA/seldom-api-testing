@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title> Quick接口自动化平台 </title>
+    <meta name="generator" content="XTestRunner 1.4.2" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://img.itest.info/seldom-main.css">
+    <link rel="stylesheet" href="http://img.itest.info/seldom-utilities.css">
+
+    <style type="text/css" media="screen">
+    body {
+        font-family: verdana, arial, helvetica, sans-serif;
+        font-size: 80%;
+    }
+
+    table {
+        font-size: 100%;
+    }
+
+    .table td {
+        white-space: inherit !important;
+    }
+
+    /* -- heading ---------------------------------------------------------------------- */
+    h1 {
+        font-size: 16pt;
+        color: gray;
+    }
+
+    pre {
+        background-color: #eef2f7;
+        padding-top: 10px;
+        text-align: left;
+        max-height: 600px;
+        overflow: auto;
+    }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: rgba(114,124,245,.25);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #6c757d;
+    }
+
+    .heading {
+        margin-top: 20px;
+        margin-bottom: 1ex;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 23%;
+        float: left;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        box-shadow: 0px 0px 5px #000;
+    }
+
+    .heading .attribute {
+        margin-top: 1ex;
+        margin-bottom: 0;
+    }
+
+    .heading .description {
+        margin-top: 4ex;
+        margin-bottom: 6ex;
+    }
+
+    /* -- css div popup ------------------------------------------------------------------------ */
+
+    a.popup_link:hover {
+        color: red;
+    }
+
+    .log_window {
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    /* -- report ------------------------------------------------------------------------ */
+    .show_detail_line {
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .show_detail_button {
+        margin-top: 3ex;
+        margin-bottom: 1ex;
+        margin-left: 10px;
+        text-align: right;
+        margin-right: 15px;
+    }
+
+    .header_row {
+        font-weight: bold;
+        color: #606060;
+        border-top-width: 10px;
+        border-color: #d6e9c6;
+        font-size: 15px;
+    }
+
+    .total_row {
+        font-weight: bold;
+        background-color: #dee2e6;
+    }
+
+    .passClass {
+        background-color: #ccf5e7;
+    }
+
+    .failClass {
+        background-color: #ffe8cc;
+    }
+
+    .errorClass {
+        background-color: #ffd6e0;
+    }
+
+    .passCase {
+        color: #00CC88;
+        font-weight: bold;
+    }
+
+    .failCase {
+        color: #FF8C00;
+        font-weight: bold;
+    }
+
+    .errorCase {
+        color: #FF3366;
+        font-weight: bold;
+    }
+
+    .hiddenRow {
+        display: none;
+    }
+
+    .caseStatistics {
+        width: 46%
+    }
+
+    .none {
+        color: #009900
+    }
+
+    .testcase {
+        margin-left: 2em;
+    }
+
+    /* -- chars ---------------------------------------------------------------------- */
+    .testChars {
+        width: 900px;
+        margin-left: 0px;
+    }
+
+    .error-color {
+        color: #fff;
+        background-color: #f44455;
+        border-color: #f44455;
+    }
+
+    .pass-color {
+        color: #fff;
+        background-color: #5fc27e;
+        border-color: #5fc27e;
+    }
+
+    .fail-color {
+        color: #fff;
+        background-color: #fcc100;
+        border-color: #fcc100;
+    }
+
+    .skip-color {
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+
+    /* -- screenshots ---------------------------------------------------------------------- */
+    .img {
+        border-collapse: collapse;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .img-card {
+        height: 600px;
+        width:800px;
+        background-color: #e7eaf0;
+    }
+
+    .img-circle {
+        height: 20px;
+        border-radius: 12px;
+        background-color: red;
+        padding-left: 13px;
+        margin: 0 auto;
+        position: relative;
+        top: -40px;
+        background-color: rgba(1, 150, 0, 0.3);
+    }
+
+    .img-circle font {
+        border: 1px solid white;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        margin-right: 9px;
+        margin-top: 4px;
+        display: block;
+        float: left;
+        background-color: white;
+    }
+
+    .close-shots {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 99;
+    }
+
+    .footer {
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+
+    #headContainer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .head-list {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #resultContainer {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+
+</style>
+</head>
+
+<body style="background-color: #f5f9fc;">
+    <script language="javascript" type="text/javascript">
+        function showLog(id) {
+            document.body.style.overflow = 'hidden'
+            document.body.style.height='100%'
+            document.getElementById(id).style.display = 'block'
+        }
+
+        function hideLog(id) {
+            document.body.style.overflow = 'auto';
+            document.getElementById(id).style.display = 'none'
+        }
+
+        function showImg(obj) {
+            document.body.style.overflow = 'hidden'
+            document.body.style.height='100%'
+            var nextObj = obj.nextElementSibling
+            nextObj.style.display = 'block'
+            var index = 0;   //每张图片的下标，
+            var len = nextObj.getElementsByTagName('img').length;
+            var imgCircle = nextObj.getElementsByClassName('img-circle')[0]
+            nextObj.onmouseover = function () {  //当鼠标光标停在图片上，则停止轮播
+                clearInterval(start);
+            }
+            nextObj.onmouseout = function () {  //当鼠标光标停在图片上，则开始轮播
+                start = setInterval(autoPlay, 1000);
+            }
+            for (var i = 0; i < len; i++) {
+                var fontTag = document.createElement('font')
+                imgCircle.appendChild(fontTag)
+            }
+            var fontTagList = nextObj.getElementsByTagName('font');  //得到所有圆圈
+            changeImg(0)
+            var funny = function (i) {
+                fontTagList[i].onmouseover = function () {
+                    index = i
+                    changeImg(i)
+                }
+            }
+            for (var i = 0; i < fontTagList.length; i++) {
+                funny(i);
+            }
+
+            function autoPlay() {
+                if (index > len - 1) {
+                    index = 0;
+                    clearInterval(start); //运行一轮后停止
+                }
+                changeImg(index++);
+            }
+            imgCircle.style.width = 30 * len + "px";
+            // 对应圆圈和图片同步
+            function changeImg(index) {
+                var imgTags = nextObj.getElementsByTagName('img');
+                var fontTags = nextObj.getElementsByTagName('font');
+                for (i=0; i < fontTags.length; i++) {
+                    imgTags[i].style.display = 'none';
+                    fontTags[i].style.backgroundColor = 'white';
+                }
+                imgTags[index].style.display = 'block';
+                if (fontTags.length > 0) {
+                    fontTags[index].style.backgroundColor = 'red';
+                }
+            }
+        }
+
+        function hideImg(obj) {
+            document.body.style.overflow = 'auto';
+            obj.parentElement.parentElement.parentElement.parentElement.parentElement.style.display = "none";
+            obj.parentElement.parentElement.parentElement.getElementsByClassName('img-circle')[0].innerHTML = "";
+        }
+
+        output_list = Array();
+        /* level 
+        - 0:Summary
+        - 1:Failed 
+        - 2:Skip
+        - 3:All 
+        */
+        function showCase(level, channel) {
+            trs = document.getElementsByTagName("tr");
+            for (var i=0; i < trs.length; i++) {
+                tr = trs[i];
+                id = tr.id;
+                if (["ft", "pt", "et", "st"].indexOf(id.substr(0, 2)) != -1) {
+                    if (level == 0 && id.substr(2, 1) == channel) {
+                        tr.className = 'hiddenRow';
+                    }
+                }
+                if (id.substr(0, 3) == 'pt' + channel) {
+                    if (level == 1) {
+                        tr.className = '';
+                    }
+                    else if (level > 4 && id.substr(2, 1) == channel) {
+                        tr.className = '';
+                    }
+                    else {
+                        tr.className = 'hiddenRow';
+                    }
+                }
+                if (id.substr(0, 3) == 'ft' + channel) {
+                    if (level == 2) {
+                        tr.className = '';
+                    }
+                    else if (level > 4 && id.substr(2, 1) == channel) {
+                        tr.className = '';
+                    }
+                    else {
+                        tr.className = 'hiddenRow';
+                    }
+                }
+                if (id.substr(0, 3) == 'et' + channel) {
+                    if (level == 3) {
+                        tr.className = '';
+                    }
+                    else if (level > 4 && id.substr(2, 1) == channel) {
+                        tr.className = '';
+                    }
+                    else {
+                        tr.className = 'hiddenRow';
+                    }
+                }
+                if (id.substr(0, 3) == 'st' + channel) {
+                    if (level == 4) {
+                        tr.className = '';
+                    }
+                    else if (level > 4 && id.substr(2, 1) == channel) {
+                        tr.className = '';
+                    }
+                    else {
+                        tr.className = 'hiddenRow';
+                    }
+                }
+            }
+        }
+        function showClassDetail(cid, count) {
+            var id_list = Array(count);
+            var toHide = 1;
+            for (var i=0; i < count; i++) {
+                tid0 = 't' + cid.substr(1) + '.' + (i + 1);
+                tid = 'f' + tid0;
+                tr = document.getElementById(tid);
+                if (!tr) {
+                    tid = 'p' + tid0;
+                    tr = document.getElementById(tid);
+                }
+                if (!tr) {
+                    tid = 'e' + tid0;
+                    tr = document.getElementById(tid);
+                }
+                if (!tr) {
+                    tid = 's' + tid0;
+                    tr = document.getElementById(tid);
+                }
+                id_list[i] = tid;
+                if (tr.className) {
+                    toHide = 0;
+                }
+            }
+            for (var i = 0; i < count; i++) {
+                tid = id_list[i];
+                if (toHide) {
+                    document.getElementById(tid).className = 'hiddenRow';
+                }
+                else {
+                    document.getElementById(tid).className = '';
+                }
+            }
+        }
+        function showTestDetail(div_id) {
+            var detailsDiv = document.getElementById(div_id)
+            var displayState = detailsDiv.style.display
+
+            if (displayState != 'block') {
+                displayState = 'block'
+                detailsDiv.style.display = 'block'
+            }
+            else {
+                detailsDiv.style.display = 'none'
+            }
+        }
+        function html_escape(s) {
+            s = s.replace(/&/g, '&amp;');
+            s = s.replace(/</g, '&lt;');
+            s = s.replace(/>/g, '&gt;');
+            return s;
+        }
+    </script>
+
+    <nav class="navbar navbar-light position-lg-sticky top-lg-0 d-none d-lg-block overlap-10 flex-none bg-white border-bottom px-0 py-3" id="topbar">
+    <div class="container-fluid">
+        <div class="hstack gap-2">
+            <a href="https://github.com/SeldomQA/XTestRunner">
+                <img src="http://img.itest.info/XTestRunner_logo.jpg" style="height: 2.25rem;">
+            </a>
+        </div>
+        <div class="navbar-user d-none d-sm-block">
+            <div class="hstack gap-3 ms-4">
+                <h3 style="float: right;"> Quick接口自动化平台 </h3>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="headContainer" class="container-fluid mm-active">
+    <div class="row">
+        <div class="col-12 col-lg-5 col-xl-4 d-flex" style="float:left">
+            <div class='card flex-fill'>
+                <div class="card-header">
+                    <div class="d-flex align-items-center">
+                        <h5 class="mb-0">Overview</h5>
+                    </div>
+                </div>
+                <div class="card-body py-0 position-relative scrollable-y" style="max-height:300px">
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item px-0 position-relative hstack flex-wrap head-list">
+                            <div class="flex-1">
+                                <div class="d-flex align-items-center mb-1">Tester</div>
+                                <div class="d-flex align-items-center">
+                                    <div class="text-sm text-muted line-clamp-1 me-auto">虫师</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item px-0 position-relative hstack flex-wrap head-list">
+                            <div class="flex-1">
+                                <div class="d-flex align-items-center mb-1">Start time - End time</div>
+                                <div class="d-flex align-items-center">
+                                    <div class="text-sm text-muted line-clamp-1 me-auto">2022-05-17 23:57:02 - 2022-05-17 23:57:04</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item px-0 position-relative hstack flex-wrap head-list">
+                            <div class="flex-1">
+                                <div class="d-flex align-items-center mb-1">Duration</div>
+                                <div class="d-flex align-items-center">
+                                    <div class="text-sm text-muted line-clamp-1 me-auto">0:00:01.869</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item px-0 position-relative hstack flex-wrap head-list">
+                            <div class="flex-1">
+                                <div class="d-flex align-items-center mb-1">Status</div>
+                                <div class="d-flex align-items-center">
+                                    <div class="text-sm text-muted line-clamp-1 me-auto">
+                                        <span class="badge badge-pill bg-soft-success text-success me-2">Passed:6</span>
+                                        <span class="badge badge-pill bg-soft-warning text-warning me-2">Failed:0</span>
+                                        <span class="badge badge-pill bg-soft-danger text-danger me-2">Errors:0</span>
+                                        <span class="badge badge-pill bg-soft-secondary text-secondary me-2">Skipped:0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item px-0 position-relative hstack flex-wrap" style="padding-top: 5px;">
+                            <div class="flex-1">
+                                <div class="d-flex align-items-center mb-1">Description</div>
+                                <div class="d-flex align-items-center">
+                                    <div class="text-sm text-muted me-auto">windows 11</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 20%">
+            <div class="card" style="height: 45%;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col"><span class="h6 font-semibold text-muted text-sm d-block mb-2">Passed</span>
+                            <span class="h3 font-bold mb-0">6</span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="icon icon-shape bg-success text-white text-lg rounded-circle">P</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 mb-0 text-sm">
+                        <span class="badge badge-pill bg-soft-success text-success me-2">100.00%</span>
+                        <span class="text-nowrap text-xs text-muted">Pass rate</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="progress" style="width:70%; margin-top: 5px;">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="83" aria-valuemin="0"
+                                aria-valuemax="100" style="width:100.00%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="height: 45%; top: 10%;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col"><span class="h6 font-semibold text-muted text-sm d-block mb-2">Failed</span>
+                            <span class="h3 font-bold mb-0">0</span></div>
+                        <div class="col-auto">
+                            <div class="icon icon-shape bg-warning text-white text-lg rounded-circle">F</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 mb-0 text-sm">
+                        <span class="badge badge-pill bg-soft-warning text-warning me-2">0.00%</span>
+                        <span class="text-nowrap text-xs text-muted">Failure rate</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="progress" style="width:70%; margin-top: 5px;">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="83" aria-valuemin="0"
+                                aria-valuemax="100" style="width:0.00%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 20%">
+            <div class="card" style="height: 45%;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col"><span class="h6 font-semibold text-muted text-sm d-block mb-2">Errors</span>
+                            <span class="h3 font-bold mb-0">0</span></div>
+                        <div class="col-auto">
+                            <div class="icon icon-shape bg-danger text-white text-lg rounded-circle">E</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 mb-0 text-sm">
+                        <span class="badge badge-pill bg-soft-danger text-danger me-2">0.00%</span>
+                        <span class="text-nowrap text-xs text-muted">Error rate</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="progress" style="width:70%; margin-top: 5px;">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="83" aria-valuemin="0"
+                                aria-valuemax="100" style="width:0.00%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="height: 45%; top: 10%;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <span class="h6 font-semibold text-muted text-sm d-block mb-2">Skipped</span>
+                            <span class="h3 font-bold mb-0">0</span>
+                        </div>
+                        <div class="col-auto">
+                            <div class="icon icon-shape bg-secondary text-white text-lg rounded-circle">S</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 mb-0 text-sm">
+                        <span class="badge badge-pill bg-soft-secondary text-secondary me-2">0.00%</span>
+                        <span class="text-nowrap text-xs text-muted">Skip rate</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="progress" style="width:70%; margin-top: 5px;">
+                            <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="83" aria-valuemin="0"
+                                aria-valuemax="100" style="width:0.00%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div id="resultContainer" class="card">
+    <div class="card-header border-bottom">
+        <span style="float: left;">
+            <h5 class="mb-0">Result</h5>
+        </span>
+        <span style="float: right;">
+            <a href='javascript:showCase(0, 1)' class="btn btn-dark btn-sm">Summary</a>
+            <a href='javascript:showCase(1, 1)' class="btn btn-success btn-sm">Pass</a>
+            <a href='javascript:showCase(2, 1)' class="btn btn-warning btn-sm">Failed</a>
+            <a href='javascript:showCase(3, 1)' class="btn btn-danger btn-sm">Error</a>
+            <a href='javascript:showCase(4, 1)' class="btn btn-secondary btn-sm">Skip</a>
+            <a href='javascript:showCase(5, 1)' class="btn btn-info btn-sm">All</a>
+        </span>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-hover table-nowrap">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col">Test Group/Test Case</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Count(times)</th>
+                    <th scope="col">Pass(times)</th>
+                    <th scope="col">Fail(times)</th>
+                    <th scope="col">Error(times)</th>
+                    <th scope="col">View</th>
+                    <th scope="col">Screenshots</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+<tr class='passClass'>
+    <td>test_case.test_case_query.TestCaseQuery</td>
+    <td>
+    测试用例查询
+    </td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.1',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.1.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_case_check</div>
+    </td>
+    <td style="color: #495057">
+        <div>用例数据检查</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.16 s</div>
+    </td>
+    <td colspan='5' align='center' class='caseStatistics'>
+        <!--css div popup start-->
+        <a class="popup_link" href="javascript:void(0)" onclick="showLog('div_pt1.1.1')">pass</a>
+        <div id='div_pt1.1.1' class="modal show" style="display: none; background-color: #000000c7;">
+            <div class="modal-dialog modal-dialog-centered log_window">
+                <div class="modal-content shadow-3">
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="mb-1">test_case_check</h5>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">detailed log</h5>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-sm btn-square bg-tertiary bg-opacity-20 bg-opacity-100-hover text-tertiary text-white-hover" data-bs-dismiss="modal" onclick="hideLog('div_pt1.1.1')">X</button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <pre>pt1.1.1: 2022-05-17 23:57:03 | DEBUG | Execute get_project - args: (&lt;quick_public.project.project_v1.Project object at 0x00000193FF77F8E0&gt;,)
+2022-05-17 23:57:03 | DEBUG | Execute get_project - kwargs: {}
+
+
+2022-05-17 23:57:03 | INFO | -------------- Request -----------------[🚀]
+2022-05-17 23:57:03 | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+2022-05-17 23:57:03 | DEBUG | [headers]:
+ {'token': '3b9bf69dba5f311f87601a34491f3b3df954aa03'} 
+
+2022-05-17 23:57:03 | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+2022-05-17 23:57:03 | INFO | -------------- Response ----------------[🛬️]
+2022-05-17 23:57:03 | INFO | successful with status 200 
+
+2022-05-17 23:57:03 | DEBUG | [type]: json      [time]: 0.042469 
+
+2022-05-17 23:57:03 | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+2022-05-17 23:57:03 | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+2022-05-17 23:57:03 | INFO | Execute get_project - 查询项目id success!
+2022-05-17 23:57:03 | DEBUG | Execute get_module - args: (&lt;quick_public.module.module_v1.Module object at 0x00000193FF79AEE0&gt;, 1)
+2022-05-17 23:57:03 | DEBUG | Execute get_module - kwargs: {}
+
+
+2022-05-17 23:57:03 | INFO | -------------- Request -----------------[🚀]
+2022-05-17 23:57:03 | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+2022-05-17 23:57:03 | DEBUG | [headers]:
+ {'token': '3b9bf69dba5f311f87601a34491f3b3df954aa03'} 
+
+2022-05-17 23:57:03 | INFO | -------------- Response ----------------[🛬️]
+2022-05-17 23:57:03 | INFO | successful with status 200 
+
+2022-05-17 23:57:03 | DEBUG | [type]: json      [time]: 0.04099 
+
+2022-05-17 23:57:03 | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+2022-05-17 23:57:03 | DEBUG | Execute get_module - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]}
+2022-05-17 23:57:03 | INFO | Execute get_module - 查询模块ID success!
+
+
+2022-05-17 23:57:03 | INFO | -------------- Request -----------------[🚀]
+2022-05-17 23:57:03 | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/module/14/cases/ 
+
+2022-05-17 23:57:03 | DEBUG | [headers]:
+ {'token': '3b9bf69dba5f311f87601a34491f3b3df954aa03'} 
+
+2022-05-17 23:57:03 | DEBUG | [params]:
+ {'page': 1, 'size': 5} 
+
+2022-05-17 23:57:03 | INFO | -------------- Response ----------------[🛬️]
+2022-05-17 23:57:03 | INFO | successful with status 200 
+
+2022-05-17 23:57:03 | DEBUG | [type]: json      [time]: 0.048727 
+
+2022-05-17 23:57:03 | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 4, 'page': 1, 'size': 5, 'caseList': [{'id': 14, 'name': 'sample GET test', 'url': 'http://httpbin.org/get', 'method': 'GET', 'header': '{"token":"123"}', 'params_type': 'params', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727c96-0b94c89f72dbbc4f5a569420\\"\\n  }, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/get?hello=world\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:16:44', 'project_id': '1', 'project_name': '简单项目'}, {'id': 15, 'name': 'sample POST test', 'url': 'http://httpbin.org/post', 'method': 'POST', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727cef-62f61a30399fb648206ebfbc\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/post\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:17:58', 'project_id': '1', 'project_name': '简单项目'}, {'id': 16, 'name': 'sample PUT test', 'url': 'http://httpbin.org/put', 'method': 'PUT', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727d2f-76530c934c005e6d46942a18\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/put\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:19:04', 'project_id': '1', 'project_name': '简单项目'}, {'id': 17, 'name': 'sample DELETE test', 'url': 'http://httpbin.org/delete', 'method': 'DELETE', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727d72-34af3e77601bb2b03fbbc1b8\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/delete\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin.org/delete', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:20:22', 'project_id': '1', 'project_name': '简单项目'}]}} 
+
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_module.test_module_query.TestModuleQuery</td>
+    <td>
+    测试模块查询
+    </td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.2',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.2.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_module_query</div>
+    </td>
+    <td style="color: #495057">
+        <div>模块数据检查</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.11 s</div>
+    </td>
+    <td colspan='5' align='center' class='caseStatistics'>
+        <!--css div popup start-->
+        <a class="popup_link" href="javascript:void(0)" onclick="showLog('div_pt1.2.1')">pass</a>
+        <div id='div_pt1.2.1' class="modal show" style="display: none; background-color: #000000c7;">
+            <div class="modal-dialog modal-dialog-centered log_window">
+                <div class="modal-content shadow-3">
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="mb-1">test_module_query</h5>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">detailed log</h5>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-sm btn-square bg-tertiary bg-opacity-20 bg-opacity-100-hover text-tertiary text-white-hover" data-bs-dismiss="modal" onclick="hideLog('div_pt1.2.1')">X</button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <pre>pt1.2.1: 2022-05-17 23:57:03 | DEBUG | Execute get_project - args: (&lt;quick_public.project.project_v1.Project object at 0x00000193FF7B9F70&gt;,)
+2022-05-17 23:57:03 | DEBUG | Execute get_project - kwargs: {}
+
+
+2022-05-17 23:57:03 | INFO | -------------- Request -----------------[🚀]
+2022-05-17 23:57:03 | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+2022-05-17 23:57:03 | DEBUG | [headers]:
+ {'token': 'eafef3bc98b0b9d10fcbad3bdf2b4d6d294f768d'} 
+
+2022-05-17 23:57:03 | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+2022-05-17 23:57:03 | INFO | -------------- Response ----------------[🛬️]
+2022-05-17 23:57:03 | INFO | successful with status 200 
+
+2022-05-17 23:57:03 | DEBUG | [type]: json      [time]: 0.045181 
+
+2022-05-17 23:57:03 | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+2022-05-17 23:57:03 | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+2022-05-17 23:57:03 | INFO | Execute get_project - 查询项目id success!
+
+
+2022-05-17 23:57:03 | INFO | -------------- Request -----------------[🚀]
+2022-05-17 23:57:03 | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+2022-05-17 23:57:03 | DEBUG | [headers]:
+ {'token': 'eafef3bc98b0b9d10fcbad3bdf2b4d6d294f768d'} 
+
+2022-05-17 23:57:03 | INFO | -------------- Response ----------------[🛬️]
+2022-05-17 23:57:03 | INFO | successful with status 200 
+
+2022-05-17 23:57:03 | DEBUG | [type]: json      [time]: 0.042343 
+
+2022-05-17 23:57:03 | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_project.test_project_query.TestProjectQuery</td>
+    <td>
+    测试项目查询
+    </td>
+    <td></td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.3',1)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.3.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_project_check</div>
+    </td>
+    <td style="color: #495057">
+        <div>项目数据检查</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.05 s</div>
+    </td>
+    <td colspan='5' align='center' class='caseStatistics'>
+        <!--css div popup start-->
+        <a class="popup_link" href="javascript:void(0)" onclick="showLog('div_pt1.3.1')">pass</a>
+        <div id='div_pt1.3.1' class="modal show" style="display: none; background-color: #000000c7;">
+            <div class="modal-dialog modal-dialog-centered log_window">
+                <div class="modal-content shadow-3">
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="mb-1">test_project_check</h5>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">detailed log</h5>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-sm btn-square bg-tertiary bg-opacity-20 bg-opacity-100-hover text-tertiary text-white-hover" data-bs-dismiss="modal" onclick="hideLog('div_pt1.3.1')">X</button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <pre>pt1.3.1: 
+
+2022-05-17 23:57:04 | INFO | -------------- Request -----------------[🚀]
+2022-05-17 23:57:04 | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+2022-05-17 23:57:04 | DEBUG | [headers]:
+ {'token': '7e43f3eb0c48e098628223fff8d5de82e24ffd6a'} 
+
+2022-05-17 23:57:04 | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+2022-05-17 23:57:04 | INFO | -------------- Response ----------------[🛬️]
+2022-05-17 23:57:04 | INFO | successful with status 200 
+
+2022-05-17 23:57:04 | DEBUG | [type]: json      [time]: 0.041395 
+
+2022-05-17 23:57:04 | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_user.test_user_abnormal.TestLoginAbnormal</td>
+    <td>
+    登录异常
+    </td>
+    <td></td>
+    <td>3</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.4',3)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.4.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_login_0_case_user_null</div>
+    </td>
+    <td style="color: #495057">
+        <div>测试用例登录异常 [with _='case_user_null', username='', password='1234', code='10010', msg='用户名密码为空']</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.05 s</div>
+    </td>
+    <td colspan='5' align='center' class='caseStatistics'>
+        <!--css div popup start-->
+        <a class="popup_link" href="javascript:void(0)" onclick="showLog('div_pt1.4.1')">pass</a>
+        <div id='div_pt1.4.1' class="modal show" style="display: none; background-color: #000000c7;">
+            <div class="modal-dialog modal-dialog-centered log_window">
+                <div class="modal-content shadow-3">
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="mb-1">test_login_0_case_user_null</h5>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">detailed log</h5>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-sm btn-square bg-tertiary bg-opacity-20 bg-opacity-100-hover text-tertiary text-white-hover" data-bs-dismiss="modal" onclick="hideLog('div_pt1.4.1')">X</button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <pre>pt1.4.1: 
+
+2022-05-17 23:57:04 | INFO | -------------- Request -----------------[🚀]
+2022-05-17 23:57:04 | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+2022-05-17 23:57:04 | DEBUG | [data]:
+ {'username': '', 'password': '1234'} 
+
+2022-05-17 23:57:04 | INFO | -------------- Response ----------------[🛬️]
+2022-05-17 23:57:04 | INFO | successful with status 200 
+
+2022-05-17 23:57:04 | DEBUG | [type]: json      [time]: 0.039251 
+
+2022-05-17 23:57:04 | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.4.2' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_login_1_case_pawd_null</div>
+    </td>
+    <td style="color: #495057">
+        <div>测试用例登录异常 [with _='case_pawd_null', username='user', password='', code='10010', msg='用户名密码为空']</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.04 s</div>
+    </td>
+    <td colspan='5' align='center' class='caseStatistics'>
+        <!--css div popup start-->
+        <a class="popup_link" href="javascript:void(0)" onclick="showLog('div_pt1.4.2')">pass</a>
+        <div id='div_pt1.4.2' class="modal show" style="display: none; background-color: #000000c7;">
+            <div class="modal-dialog modal-dialog-centered log_window">
+                <div class="modal-content shadow-3">
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="mb-1">test_login_1_case_pawd_null</h5>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">detailed log</h5>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-sm btn-square bg-tertiary bg-opacity-20 bg-opacity-100-hover text-tertiary text-white-hover" data-bs-dismiss="modal" onclick="hideLog('div_pt1.4.2')">X</button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <pre>pt1.4.2: 
+
+2022-05-17 23:57:04 | INFO | -------------- Request -----------------[🚀]
+2022-05-17 23:57:04 | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+2022-05-17 23:57:04 | DEBUG | [data]:
+ {'username': 'user', 'password': ''} 
+
+2022-05-17 23:57:04 | INFO | -------------- Response ----------------[🛬️]
+2022-05-17 23:57:04 | INFO | successful with status 200 
+
+2022-05-17 23:57:04 | DEBUG | [type]: json      [time]: 0.034117 
+
+2022-05-17 23:57:04 | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.4.3' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_login_2_case_error</div>
+    </td>
+    <td style="color: #495057">
+        <div>测试用例登录异常 [with _='case_error', username='error', password='error', code='10011', msg='用户名密码错误']</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.34 s</div>
+    </td>
+    <td colspan='5' align='center' class='caseStatistics'>
+        <!--css div popup start-->
+        <a class="popup_link" href="javascript:void(0)" onclick="showLog('div_pt1.4.3')">pass</a>
+        <div id='div_pt1.4.3' class="modal show" style="display: none; background-color: #000000c7;">
+            <div class="modal-dialog modal-dialog-centered log_window">
+                <div class="modal-content shadow-3">
+                    <div class="modal-header">
+                        <div>
+                            <h5 class="mb-1">test_login_2_case_error</h5>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">detailed log</h5>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-sm btn-square bg-tertiary bg-opacity-20 bg-opacity-100-hover text-tertiary text-white-hover" data-bs-dismiss="modal" onclick="hideLog('div_pt1.4.3')">X</button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <pre>pt1.4.3: 
+
+2022-05-17 23:57:04 | INFO | -------------- Request -----------------[🚀]
+2022-05-17 23:57:04 | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+2022-05-17 23:57:04 | DEBUG | [data]:
+ {'username': 'error', 'password': 'error'} 
+
+2022-05-17 23:57:04 | INFO | -------------- Response ----------------[🛬️]
+2022-05-17 23:57:04 | INFO | successful with status 200 
+
+2022-05-17 23:57:04 | DEBUG | [type]: json      [time]: 0.33123 
+
+2022-05-17 23:57:04 | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10011', 'message': '用户名密码错误'}, 'data': []} 
+
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer border-0 py-5">
+        <span class="text-muted text-sm">Cases Total:
+            <button type="button" class="btn btn-sm bg-dark bg-opacity-20 bg-opacity-100-hover text-dark text-white-hover">6</button> =
+            <button type="button" class="btn btn-sm bg-success bg-opacity-20 bg-opacity-100-hover text-success text-white-hover">6</button> +
+            <button type="button" class="btn btn-sm bg-warning bg-opacity-20 bg-opacity-100-hover text-warning text-white-hover">0</button> +
+            <button type="button" class="btn btn-sm bg-danger bg-opacity-20 bg-opacity-100-hover text-danger text-white-hover">0</button> +
+            <button type="button" class="btn btn-sm bg-secondary bg-opacity-20 bg-opacity-100-hover text-secondary text-white-hover">0</button>
+        </span>
+    </div>
+</div>
+<div style="height:120px"></div>
+    
+
+
+<footer class="footer" style="height: 50px; position: fixed; width: 100%">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                XTestRunner 1.4.2; 2022 © 重定向科技 - http://itest.info
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

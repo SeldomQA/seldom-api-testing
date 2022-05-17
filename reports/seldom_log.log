@@ -1,0 +1,1483 @@
+[ 2022-05-17 22:29:20 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:29:20 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn//api/v1/login/ 
+
+[ 2022-05-17 22:29:20 log.py | DEBUG | [data]:
+ {'username': '', 'password': '1234'} 
+
+[ 2022-05-17 22:29:20 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:29:20 log.py | WARNING | unsuccessful with status 404 
+
+[ 2022-05-17 22:29:20 log.py | DEBUG | [warning]: failed to convert res to json, try to convert to text
+[ 2022-05-17 22:29:20 log.py | DEBUG | [type]: text      [time]: 0.060662
+
+[ 2022-05-17 22:29:20 log.py | DEBUG | [response]:
+ 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+
+[ 2022-05-17 22:29:20 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 22:29:34 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:29:34 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:29:34 log.py | DEBUG | [data]:
+ {'username': '', 'password': '1234'} 
+
+[ 2022-05-17 22:29:34 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:29:34 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:29:34 log.py | DEBUG | [type]: json      [time]: 0.060691 
+
+[ 2022-05-17 22:29:34 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 22:29:34 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 22:31:23 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:31:23 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:31:23 log.py | DEBUG | [data]:
+ {'username': '', 'password': '1234'} 
+
+[ 2022-05-17 22:31:23 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:31:23 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:31:23 log.py | DEBUG | [type]: json      [time]: 0.058911 
+
+[ 2022-05-17 22:31:23 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 22:31:23 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:31:23 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:31:23 log.py | DEBUG | [data]:
+ {'username': 'user', 'password': ''} 
+
+[ 2022-05-17 22:31:23 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:31:23 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:31:23 log.py | DEBUG | [type]: json      [time]: 0.087596 
+
+[ 2022-05-17 22:31:23 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 22:31:23 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 22:31:51 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:31:51 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:31:51 log.py | DEBUG | [data]:
+ {'username': '', 'password': '1234'} 
+
+[ 2022-05-17 22:31:51 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:31:51 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:31:51 log.py | DEBUG | [type]: json      [time]: 0.05069 
+
+[ 2022-05-17 22:31:51 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 22:31:51 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:31:51 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:31:51 log.py | DEBUG | [data]:
+ {'username': 'user', 'password': ''} 
+
+[ 2022-05-17 22:31:51 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:31:51 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:31:51 log.py | DEBUG | [type]: json      [time]: 0.03771 
+
+[ 2022-05-17 22:31:51 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 22:31:51 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:31:51 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:31:51 log.py | DEBUG | [data]:
+ {'username': 'error', 'password': 'error'} 
+
+[ 2022-05-17 22:31:51 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:31:51 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:31:51 log.py | DEBUG | [type]: json      [time]: 0.34088 
+
+[ 2022-05-17 22:31:51 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10011', 'message': '用户名密码错误'}, 'data': []} 
+
+[ 2022-05-17 22:31:51 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 22:32:26 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:32:26 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:32:26 log.py | DEBUG | [data]:
+ {'username': '', 'password': '1234'} 
+
+[ 2022-05-17 22:32:27 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:32:27 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:32:27 log.py | DEBUG | [type]: json      [time]: 0.118085 
+
+[ 2022-05-17 22:32:27 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 22:32:27 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:32:27 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:32:27 log.py | DEBUG | [data]:
+ {'username': 'user', 'password': ''} 
+
+[ 2022-05-17 22:32:27 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:32:27 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:32:27 log.py | DEBUG | [type]: json      [time]: 0.197947 
+
+[ 2022-05-17 22:32:27 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 22:32:27 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:32:27 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:32:27 log.py | DEBUG | [data]:
+ {'username': 'error', 'password': 'error'} 
+
+[ 2022-05-17 22:32:27 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:32:27 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:32:27 log.py | DEBUG | [type]: json      [time]: 0.399394 
+
+[ 2022-05-17 22:32:27 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10011', 'message': '用户名密码错误'}, 'data': []} 
+
+[ 2022-05-17 22:32:27 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 22:44:11 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 22:44:42 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 22:45:29 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:45:29 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:45:29 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 22:45:30 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:45:30 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:45:30 log.py | DEBUG | [type]: json      [time]: 0.409853 
+
+[ 2022-05-17 22:45:30 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '6f5727ac94e108f7e2fd2e576a2a336ec97a0480', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 22:45:30 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 22:45:30 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:45:30 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 22:45:30 log.py | DEBUG | [headers]:
+ {'token': '6f5727ac94e108f7e2fd2e576a2a336ec97a0480'} 
+
+[ 2022-05-17 22:45:30 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 22:45:30 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:45:30 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:45:30 log.py | DEBUG | [type]: json      [time]: 0.048178 
+
+[ 2022-05-17 22:45:30 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 10, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 22:45:30 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 22:49:08 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:49:08 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:49:08 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 22:49:09 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:49:09 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:49:09 log.py | DEBUG | [type]: json      [time]: 0.390617 
+
+[ 2022-05-17 22:49:09 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '6c8975b28ea3665eb3d9148887f866549fffe958', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 22:49:09 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 22:49:09 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:49:09 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 22:49:09 log.py | DEBUG | [headers]:
+ {'token': '6c8975b28ea3665eb3d9148887f866549fffe958'} 
+
+[ 2022-05-17 22:49:09 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 22:49:09 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:49:09 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:49:09 log.py | DEBUG | [type]: json      [time]: 0.040673 
+
+[ 2022-05-17 22:49:09 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 10, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 22:49:09 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 22:53:03 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:53:03 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:53:03 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 22:53:03 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:53:03 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:53:03 log.py | DEBUG | [type]: json      [time]: 0.387298 
+
+[ 2022-05-17 22:53:03 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '588395930d4f55d6acdf3ea41e620239bad3a55d', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 22:53:03 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 22:53:03 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:53:03 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 22:53:03 log.py | DEBUG | [headers]:
+ {'token': '588395930d4f55d6acdf3ea41e620239bad3a55d'} 
+
+[ 2022-05-17 22:53:03 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 22:53:04 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:53:04 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:53:04 log.py | DEBUG | [type]: json      [time]: 0.043428 
+
+[ 2022-05-17 22:53:04 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 10, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 22:53:04 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 22:56:32 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:56:32 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 22:56:32 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 22:56:32 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:56:32 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:56:32 log.py | DEBUG | [type]: json      [time]: 0.469488 
+
+[ 2022-05-17 22:56:32 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '3c7e6f694fa2e277e31f6f75155ad24eb9a9473a', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 22:56:32 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 22:56:32 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 22:56:32 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 22:56:32 log.py | DEBUG | [headers]:
+ {'token': '3c7e6f694fa2e277e31f6f75155ad24eb9a9473a'} 
+
+[ 2022-05-17 22:56:32 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 22:56:32 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 22:56:32 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 22:56:32 log.py | DEBUG | [type]: json      [time]: 0.215636 
+
+[ 2022-05-17 22:56:32 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 10, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 22:56:32 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:13:51 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:13:51 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:13:51 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:13:52 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:13:52 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:13:52 log.py | DEBUG | [type]: json      [time]: 0.394078 
+
+[ 2022-05-17 23:13:52 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '3912382a2e21b3e222ad010ef5e11a683139c03c', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:13:52 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:13:52 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:13:52 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/<quick_public.project.project_v1.Project object at 0x000002469EA94AF0>/moduleTree/ 
+
+[ 2022-05-17 23:13:52 log.py | DEBUG | [headers]:
+ {'token': '3912382a2e21b3e222ad010ef5e11a683139c03c'} 
+
+[ 2022-05-17 23:13:52 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:13:52 log.py | WARNING | unsuccessful with status 404 
+
+[ 2022-05-17 23:13:52 log.py | DEBUG | [warning]: failed to convert res to json, try to convert to text
+[ 2022-05-17 23:13:52 log.py | DEBUG | [type]: text      [time]: 0.036427
+
+[ 2022-05-17 23:13:52 log.py | DEBUG | [response]:
+ 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+
+[ 2022-05-17 23:13:52 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:15:05 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:15:05 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:15:05 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:15:05 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:15:05 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:15:05 log.py | DEBUG | [type]: json      [time]: 0.372484 
+
+[ 2022-05-17 23:15:05 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '9eb4587e6ea803317fb22bdaaad6e4188e40a0b1', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:15:05 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:15:05 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:15:05 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/<quick_public.project.project_v1.Project object at 0x000001727817FC40>/moduleTree/ 
+
+[ 2022-05-17 23:15:05 log.py | DEBUG | [headers]:
+ {'token': '9eb4587e6ea803317fb22bdaaad6e4188e40a0b1'} 
+
+[ 2022-05-17 23:15:05 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:15:05 log.py | WARNING | unsuccessful with status 404 
+
+[ 2022-05-17 23:15:05 log.py | DEBUG | [warning]: failed to convert res to json, try to convert to text
+[ 2022-05-17 23:15:05 log.py | DEBUG | [type]: text      [time]: 0.034648
+
+[ 2022-05-17 23:15:05 log.py | DEBUG | [response]:
+ 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+
+[ 2022-05-17 23:15:05 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:15:59 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:15:59 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:15:59 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:15:59 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:15:59 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:15:59 log.py | DEBUG | [type]: json      [time]: 0.564201 
+
+[ 2022-05-17 23:15:59 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '39ff77c1375f65ebe6474ee5f88f4b45400c56de', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:15:59 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:15:59 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:15:59 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/<quick_public.project.project_v1.Project object at 0x0000015A7FCFFB80>/moduleTree/ 
+
+[ 2022-05-17 23:15:59 log.py | DEBUG | [headers]:
+ {'token': '39ff77c1375f65ebe6474ee5f88f4b45400c56de'} 
+
+[ 2022-05-17 23:15:59 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:15:59 log.py | WARNING | unsuccessful with status 404 
+
+[ 2022-05-17 23:15:59 log.py | DEBUG | [warning]: failed to convert res to json, try to convert to text
+[ 2022-05-17 23:15:59 log.py | DEBUG | [type]: text      [time]: 0.045341
+
+[ 2022-05-17 23:15:59 log.py | DEBUG | [response]:
+ 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+
+[ 2022-05-17 23:15:59 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:17:31 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:17:31 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:17:31 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:17:31 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:17:31 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:17:31 log.py | DEBUG | [type]: json      [time]: 0.37148 
+
+[ 2022-05-17 23:17:31 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': 'ef7e0a7eabe92a1718425532b6c2b9fbf463a6ca', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:17:31 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:17:31 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:17:31 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/<quick_public.project.project_v1.Project object at 0x000001D3B2253A60>/moduleTree/ 
+
+[ 2022-05-17 23:17:31 log.py | DEBUG | [headers]:
+ {'token': 'ef7e0a7eabe92a1718425532b6c2b9fbf463a6ca'} 
+
+[ 2022-05-17 23:17:31 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:17:31 log.py | WARNING | unsuccessful with status 404 
+
+[ 2022-05-17 23:17:31 log.py | DEBUG | [warning]: failed to convert res to json, try to convert to text
+[ 2022-05-17 23:17:31 log.py | DEBUG | [type]: text      [time]: 0.04052
+
+[ 2022-05-17 23:17:31 log.py | DEBUG | [response]:
+ 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+
+[ 2022-05-17 23:17:31 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:18:22 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:18:22 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:18:22 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:18:22 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:18:22 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:18:22 log.py | DEBUG | [type]: json      [time]: 0.372529 
+
+[ 2022-05-17 23:18:22 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '97d9735e42b43d2018add52cb94cf545601976e7', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:18:22 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:18:22 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x0000018077065A30>,)
+[ 2022-05-17 23:18:22 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:18:22 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:18:22 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:18:22 log.py | DEBUG | [headers]:
+ {'token': '97d9735e42b43d2018add52cb94cf545601976e7'} 
+
+[ 2022-05-17 23:18:22 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:18:22 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:18:22 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:18:22 log.py | DEBUG | [type]: json      [time]: 0.043347 
+
+[ 2022-05-17 23:18:22 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:18:22 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:18:22 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:18:22 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:18:22 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/[{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]/moduleTree/ 
+
+[ 2022-05-17 23:18:22 log.py | DEBUG | [headers]:
+ {'token': '97d9735e42b43d2018add52cb94cf545601976e7'} 
+
+[ 2022-05-17 23:18:22 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:18:22 log.py | WARNING | unsuccessful with status 404 
+
+[ 2022-05-17 23:18:22 log.py | DEBUG | [warning]: failed to convert res to json, try to convert to text
+[ 2022-05-17 23:18:22 log.py | DEBUG | [type]: text      [time]: 0.048262
+
+[ 2022-05-17 23:18:22 log.py | DEBUG | [response]:
+ 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+
+[ 2022-05-17 23:18:22 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:18:42 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:18:42 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:18:42 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:18:43 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:18:43 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:18:43 log.py | DEBUG | [type]: json      [time]: 0.375464 
+
+[ 2022-05-17 23:18:43 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '589bf574e2eb84540afda2c370b16878a019fabe', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:18:43 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:18:43 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x0000023F48054A30>,)
+[ 2022-05-17 23:18:43 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:18:43 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:18:43 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:18:43 log.py | DEBUG | [headers]:
+ {'token': '589bf574e2eb84540afda2c370b16878a019fabe'} 
+
+[ 2022-05-17 23:18:43 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:18:43 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:18:43 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:18:43 log.py | DEBUG | [type]: json      [time]: 0.049415 
+
+[ 2022-05-17 23:18:43 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:18:43 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:18:43 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:18:43 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:18:43 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+[ 2022-05-17 23:18:43 log.py | DEBUG | [headers]:
+ {'token': '589bf574e2eb84540afda2c370b16878a019fabe'} 
+
+[ 2022-05-17 23:18:43 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:18:43 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:18:43 log.py | DEBUG | [type]: json      [time]: 0.038695 
+
+[ 2022-05-17 23:18:43 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+[ 2022-05-17 23:18:43 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:21:04 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:21:04 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:21:04 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:21:04 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:21:04 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:21:04 log.py | DEBUG | [type]: json      [time]: 0.377782 
+
+[ 2022-05-17 23:21:04 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '919fda6a55b064c30229700f6cc6c8e88e4e2c53', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:21:04 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:21:04 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x000001BFD1EF5AF0>,)
+[ 2022-05-17 23:21:04 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:21:04 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:21:04 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:21:04 log.py | DEBUG | [headers]:
+ {'token': '919fda6a55b064c30229700f6cc6c8e88e4e2c53'} 
+
+[ 2022-05-17 23:21:04 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:21:04 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:21:04 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:21:04 log.py | DEBUG | [type]: json      [time]: 0.048475 
+
+[ 2022-05-17 23:21:04 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:21:04 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:21:04 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:21:04 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:21:04 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+[ 2022-05-17 23:21:04 log.py | DEBUG | [headers]:
+ {'token': '919fda6a55b064c30229700f6cc6c8e88e4e2c53'} 
+
+[ 2022-05-17 23:21:04 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:21:04 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:21:04 log.py | DEBUG | [type]: json      [time]: 0.039601 
+
+[ 2022-05-17 23:21:04 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+[ 2022-05-17 23:21:04 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:23:42 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:23:42 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:23:42 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:23:42 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:23:42 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:23:42 log.py | DEBUG | [type]: json      [time]: 0.375022 
+
+[ 2022-05-17 23:23:42 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '4a96c49d2d5aeb2c9cdb277eea35c27a06932c70', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:23:42 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:23:42 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x00000247A4055A30>,)
+[ 2022-05-17 23:23:42 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:23:42 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:23:42 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:23:42 log.py | DEBUG | [headers]:
+ {'token': '4a96c49d2d5aeb2c9cdb277eea35c27a06932c70'} 
+
+[ 2022-05-17 23:23:42 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:23:42 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:23:42 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:23:42 log.py | DEBUG | [type]: json      [time]: 0.048293 
+
+[ 2022-05-17 23:23:42 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:23:42 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:23:42 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:23:42 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:23:42 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+[ 2022-05-17 23:23:42 log.py | DEBUG | [headers]:
+ {'token': '4a96c49d2d5aeb2c9cdb277eea35c27a06932c70'} 
+
+[ 2022-05-17 23:23:42 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:23:42 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:23:42 log.py | DEBUG | [type]: json      [time]: 0.041968 
+
+[ 2022-05-17 23:23:42 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+[ 2022-05-17 23:23:42 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:30:07 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:30:07 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:30:07 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:30:07 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:30:07 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:30:07 log.py | DEBUG | [type]: json      [time]: 0.371761 
+
+[ 2022-05-17 23:30:07 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '0d9ad738ce8192e8d67742693615b9da631217b6', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:30:07 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:30:07 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x0000022C784239A0>,)
+[ 2022-05-17 23:30:07 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:30:07 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:30:07 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:30:07 log.py | DEBUG | [headers]:
+ {'token': '0d9ad738ce8192e8d67742693615b9da631217b6'} 
+
+[ 2022-05-17 23:30:07 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:30:07 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:30:07 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:30:07 log.py | DEBUG | [type]: json      [time]: 0.051914 
+
+[ 2022-05-17 23:30:07 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:30:07 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:30:07 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:30:07 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:30:07 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+[ 2022-05-17 23:30:07 log.py | DEBUG | [headers]:
+ {'token': '0d9ad738ce8192e8d67742693615b9da631217b6'} 
+
+[ 2022-05-17 23:30:07 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:30:07 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:30:07 log.py | DEBUG | [type]: json      [time]: 0.04606 
+
+[ 2022-05-17 23:30:07 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+[ 2022-05-17 23:30:07 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:39:26 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:39:26 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:39:26 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:39:27 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:39:27 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [type]: json      [time]: 0.445653 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': 'd12147a2c1ebc361e44d50d182ef76f3681c633b', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:39:27 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:39:27 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x0000024E7F312D00>,)
+[ 2022-05-17 23:39:27 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:39:27 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:39:27 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [headers]:
+ {'token': 'd12147a2c1ebc361e44d50d182ef76f3681c633b'} 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:39:27 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:39:27 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [type]: json      [time]: 0.043571 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:39:27 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:39:27 log.py | DEBUG | Execute get_module - args: (<quick_public.module.module_v1.Module object at 0x0000024E7F322AF0>, 1)
+[ 2022-05-17 23:39:27 log.py | DEBUG | Execute get_module - kwargs: {}
+[ 2022-05-17 23:39:27 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:39:27 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [headers]:
+ {'token': 'd12147a2c1ebc361e44d50d182ef76f3681c633b'} 
+
+[ 2022-05-17 23:39:27 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:39:27 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [type]: json      [time]: 0.04126 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | Execute get_module - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]}
+[ 2022-05-17 23:39:27 log.py | INFO | Execute get_module - 查询模块ID success!
+[ 2022-05-17 23:39:27 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:39:27 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn//api/v1/module/14/cases/ 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [headers]:
+ {'token': 'd12147a2c1ebc361e44d50d182ef76f3681c633b'} 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 5} 
+
+[ 2022-05-17 23:39:27 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:39:27 log.py | WARNING | unsuccessful with status 404 
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [warning]: failed to convert res to json, try to convert to text
+[ 2022-05-17 23:39:27 log.py | DEBUG | [type]: text      [time]: 0.039032
+
+[ 2022-05-17 23:39:27 log.py | DEBUG | [response]:
+ 
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Not Found</title>
+</head>
+<body>
+  <h1>Not Found</h1><p>The requested resource was not found on this server.</p>
+</body>
+</html>
+ 
+
+[ 2022-05-17 23:39:27 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:40:37 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:40:37 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:40:37 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:40:37 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [type]: json      [time]: 0.385258 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '51cf99ae516b0b68e21867be48ba52f6d7e0f338', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:40:37 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:40:37 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x00000265FFE62D00>,)
+[ 2022-05-17 23:40:37 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:40:37 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:40:37 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [headers]:
+ {'token': '51cf99ae516b0b68e21867be48ba52f6d7e0f338'} 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:40:37 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:40:37 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [type]: json      [time]: 0.049918 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:40:37 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:40:37 log.py | DEBUG | Execute get_module - args: (<quick_public.module.module_v1.Module object at 0x00000265FFE71B50>, 1)
+[ 2022-05-17 23:40:37 log.py | DEBUG | Execute get_module - kwargs: {}
+[ 2022-05-17 23:40:37 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:40:37 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [headers]:
+ {'token': '51cf99ae516b0b68e21867be48ba52f6d7e0f338'} 
+
+[ 2022-05-17 23:40:37 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:40:37 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [type]: json      [time]: 0.045527 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | Execute get_module - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]}
+[ 2022-05-17 23:40:37 log.py | INFO | Execute get_module - 查询模块ID success!
+[ 2022-05-17 23:40:37 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:40:37 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/module/14/cases/ 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [headers]:
+ {'token': '51cf99ae516b0b68e21867be48ba52f6d7e0f338'} 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 5} 
+
+[ 2022-05-17 23:40:37 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:40:37 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [type]: json      [time]: 0.050652 
+
+[ 2022-05-17 23:40:37 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 4, 'page': 1, 'size': 5, 'caseList': [{'id': 14, 'name': 'sample GET test', 'url': 'http://httpbin.org/get', 'method': 'GET', 'header': '{"token":"123"}', 'params_type': 'params', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727c96-0b94c89f72dbbc4f5a569420\\"\\n  }, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/get?hello=world\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:16:44', 'project_id': '1', 'project_name': '简单项目'}, {'id': 15, 'name': 'sample POST test', 'url': 'http://httpbin.org/post', 'method': 'POST', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727cef-62f61a30399fb648206ebfbc\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/post\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:17:58', 'project_id': '1', 'project_name': '简单项目'}, {'id': 16, 'name': 'sample PUT test', 'url': 'http://httpbin.org/put', 'method': 'PUT', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727d2f-76530c934c005e6d46942a18\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/put\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:19:04', 'project_id': '1', 'project_name': '简单项目'}, {'id': 17, 'name': 'sample DELETE test', 'url': 'http://httpbin.org/delete', 'method': 'DELETE', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727d72-34af3e77601bb2b03fbbc1b8\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/delete\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin.org/delete', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:20:22', 'project_id': '1', 'project_name': '简单项目'}]}} 
+
+[ 2022-05-17 23:40:37 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:48:38 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:38 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:48:38 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:39 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [type]: json      [time]: 0.404933 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '1ec9e34169c267fdd94955e1e840b52eda76ee18', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:48:39 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:48:39 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x0000015FFF67E1C0>,)
+[ 2022-05-17 23:48:39 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:39 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [headers]:
+ {'token': '1ec9e34169c267fdd94955e1e840b52eda76ee18'} 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:39 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [type]: json      [time]: 0.04769 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:48:39 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:48:39 log.py | DEBUG | Execute get_module - args: (<quick_public.module.module_v1.Module object at 0x0000015FFF6A5A30>, 1)
+[ 2022-05-17 23:48:39 log.py | DEBUG | Execute get_module - kwargs: {}
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:39 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [headers]:
+ {'token': '1ec9e34169c267fdd94955e1e840b52eda76ee18'} 
+
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:39 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [type]: json      [time]: 0.039622 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | Execute get_module - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]}
+[ 2022-05-17 23:48:39 log.py | INFO | Execute get_module - 查询模块ID success!
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:39 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/module/14/cases/ 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [headers]:
+ {'token': '1ec9e34169c267fdd94955e1e840b52eda76ee18'} 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 5} 
+
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:39 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [type]: json      [time]: 0.053485 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 4, 'page': 1, 'size': 5, 'caseList': [{'id': 14, 'name': 'sample GET test', 'url': 'http://httpbin.org/get', 'method': 'GET', 'header': '{"token":"123"}', 'params_type': 'params', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727c96-0b94c89f72dbbc4f5a569420\\"\\n  }, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/get?hello=world\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:16:44', 'project_id': '1', 'project_name': '简单项目'}, {'id': 15, 'name': 'sample POST test', 'url': 'http://httpbin.org/post', 'method': 'POST', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727cef-62f61a30399fb648206ebfbc\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/post\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:17:58', 'project_id': '1', 'project_name': '简单项目'}, {'id': 16, 'name': 'sample PUT test', 'url': 'http://httpbin.org/put', 'method': 'PUT', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727d2f-76530c934c005e6d46942a18\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/put\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:19:04', 'project_id': '1', 'project_name': '简单项目'}, {'id': 17, 'name': 'sample DELETE test', 'url': 'http://httpbin.org/delete', 'method': 'DELETE', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727d72-34af3e77601bb2b03fbbc1b8\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/delete\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin.org/delete', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:20:22', 'project_id': '1', 'project_name': '简单项目'}]}} 
+
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:39 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:39 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [type]: json      [time]: 0.57309 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '38fdb18d0b58b37d47281f27cc7611c8525dd161', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:48:39 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:48:39 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x0000015FFF6FEE50>,)
+[ 2022-05-17 23:48:39 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:39 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [headers]:
+ {'token': '38fdb18d0b58b37d47281f27cc7611c8525dd161'} 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:39 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [type]: json      [time]: 0.052206 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:48:39 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:39 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [headers]:
+ {'token': '38fdb18d0b58b37d47281f27cc7611c8525dd161'} 
+
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:39 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [type]: json      [time]: 0.06003 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+[ 2022-05-17 23:48:39 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:39 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:48:39 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:48:40 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:40 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [type]: json      [time]: 0.374018 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '24c4fbbeb680cd711d4db83d1d7f72ac98aa30dc', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:48:40 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:48:40 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:40 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [headers]:
+ {'token': '24c4fbbeb680cd711d4db83d1d7f72ac98aa30dc'} 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:48:40 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:40 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [type]: json      [time]: 0.059057 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:48:40 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:40 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [data]:
+ {'username': '', 'password': '1234'} 
+
+[ 2022-05-17 23:48:40 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:40 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [type]: json      [time]: 0.057706 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 23:48:40 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:40 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [data]:
+ {'username': 'user', 'password': ''} 
+
+[ 2022-05-17 23:48:40 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:40 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [type]: json      [time]: 0.047134 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 23:48:40 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:40 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [data]:
+ {'username': 'error', 'password': 'error'} 
+
+[ 2022-05-17 23:48:40 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:40 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [type]: json      [time]: 0.354982 
+
+[ 2022-05-17 23:48:40 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10011', 'message': '用户名密码错误'}, 'data': []} 
+
+[ 2022-05-17 23:48:40 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+[ 2022-05-17 23:48:54 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:54 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:48:54 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:55 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [type]: json      [time]: 0.506492 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '26637e73cf90a1df219d05cd732c0472b9b3ee6c', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:48:55 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:48:55 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x000001A63D651190>,)
+[ 2022-05-17 23:48:55 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:55 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [headers]:
+ {'token': '26637e73cf90a1df219d05cd732c0472b9b3ee6c'} 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:55 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [type]: json      [time]: 0.045407 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:48:55 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:48:55 log.py | DEBUG | Execute get_module - args: (<quick_public.module.module_v1.Module object at 0x000001A63D6784F0>, 1)
+[ 2022-05-17 23:48:55 log.py | DEBUG | Execute get_module - kwargs: {}
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:55 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [headers]:
+ {'token': '26637e73cf90a1df219d05cd732c0472b9b3ee6c'} 
+
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:55 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [type]: json      [time]: 0.03952 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | Execute get_module - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]}
+[ 2022-05-17 23:48:55 log.py | INFO | Execute get_module - 查询模块ID success!
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:55 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/module/14/cases/ 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [headers]:
+ {'token': '26637e73cf90a1df219d05cd732c0472b9b3ee6c'} 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 5} 
+
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:55 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [type]: json      [time]: 0.049887 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 4, 'page': 1, 'size': 5, 'caseList': [{'id': 14, 'name': 'sample GET test', 'url': 'http://httpbin.org/get', 'method': 'GET', 'header': '{"token":"123"}', 'params_type': 'params', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727c96-0b94c89f72dbbc4f5a569420\\"\\n  }, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/get?hello=world\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:16:44', 'project_id': '1', 'project_name': '简单项目'}, {'id': 15, 'name': 'sample POST test', 'url': 'http://httpbin.org/post', 'method': 'POST', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727cef-62f61a30399fb648206ebfbc\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/post\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:17:58', 'project_id': '1', 'project_name': '简单项目'}, {'id': 16, 'name': 'sample PUT test', 'url': 'http://httpbin.org/put', 'method': 'PUT', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727d2f-76530c934c005e6d46942a18\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/put\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:19:04', 'project_id': '1', 'project_name': '简单项目'}, {'id': 17, 'name': 'sample DELETE test', 'url': 'http://httpbin.org/delete', 'method': 'DELETE', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727d72-34af3e77601bb2b03fbbc1b8\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/delete\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin.org/delete', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:20:22', 'project_id': '1', 'project_name': '简单项目'}]}} 
+
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:55 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:55 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [type]: json      [time]: 0.354924 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '2ae9e8010248013a27c66fef4dea92ff521aa801', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:48:55 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:48:55 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x000001A63D626640>,)
+[ 2022-05-17 23:48:55 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:55 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [headers]:
+ {'token': '2ae9e8010248013a27c66fef4dea92ff521aa801'} 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:55 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [type]: json      [time]: 0.046467 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:48:55 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:55 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [headers]:
+ {'token': '2ae9e8010248013a27c66fef4dea92ff521aa801'} 
+
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:55 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [type]: json      [time]: 0.039125 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+[ 2022-05-17 23:48:55 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:55 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:48:55 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:48:56 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:56 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [type]: json      [time]: 0.362833 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': 'bd4504b18b294fc87e1aa079348a3118ea549188', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:48:56 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:48:56 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:56 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [headers]:
+ {'token': 'bd4504b18b294fc87e1aa079348a3118ea549188'} 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:48:56 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:56 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [type]: json      [time]: 0.046769 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:48:56 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:56 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [data]:
+ {'username': '', 'password': '1234'} 
+
+[ 2022-05-17 23:48:56 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:56 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [type]: json      [time]: 0.035456 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 23:48:56 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:56 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [data]:
+ {'username': 'user', 'password': ''} 
+
+[ 2022-05-17 23:48:56 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:56 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [type]: json      [time]: 0.036844 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 23:48:56 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:48:56 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [data]:
+ {'username': 'error', 'password': 'error'} 
+
+[ 2022-05-17 23:48:56 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:48:56 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [type]: json      [time]: 0.324781 
+
+[ 2022-05-17 23:48:56 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10011', 'message': '用户名密码错误'}, 'data': []} 
+
+[ 2022-05-17 23:48:56 log.py | SUCCESS | generated html file: file:///D:\github\seldom-api-testing\reports\2022_05_17_23_48_53_result.html
+[ 2022-05-17 23:48:56 log.py | SUCCESS | generated log file: file:///D:\github\seldom-api-testing\reports\seldom_log.log
+[ 2022-05-17 23:57:02 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:57:02 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:57:02 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:57:03 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [type]: json      [time]: 0.379203 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '3b9bf69dba5f311f87601a34491f3b3df954aa03', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:57:03 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:57:03 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x00000193FF77F8E0>,)
+[ 2022-05-17 23:57:03 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:57:03 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [headers]:
+ {'token': '3b9bf69dba5f311f87601a34491f3b3df954aa03'} 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:57:03 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [type]: json      [time]: 0.042469 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:57:03 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:57:03 log.py | DEBUG | Execute get_module - args: (<quick_public.module.module_v1.Module object at 0x00000193FF79AEE0>, 1)
+[ 2022-05-17 23:57:03 log.py | DEBUG | Execute get_module - kwargs: {}
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:57:03 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [headers]:
+ {'token': '3b9bf69dba5f311f87601a34491f3b3df954aa03'} 
+
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:57:03 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [type]: json      [time]: 0.04099 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | Execute get_module - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]}
+[ 2022-05-17 23:57:03 log.py | INFO | Execute get_module - 查询模块ID success!
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:57:03 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/module/14/cases/ 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [headers]:
+ {'token': '3b9bf69dba5f311f87601a34491f3b3df954aa03'} 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 5} 
+
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:57:03 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [type]: json      [time]: 0.048727 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 4, 'page': 1, 'size': 5, 'caseList': [{'id': 14, 'name': 'sample GET test', 'url': 'http://httpbin.org/get', 'method': 'GET', 'header': '{"token":"123"}', 'params_type': 'params', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727c96-0b94c89f72dbbc4f5a569420\\"\\n  }, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/get?hello=world\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:16:44', 'project_id': '1', 'project_name': '简单项目'}, {'id': 15, 'name': 'sample POST test', 'url': 'http://httpbin.org/post', 'method': 'POST', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727cef-62f61a30399fb648206ebfbc\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/post\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:17:58', 'project_id': '1', 'project_name': '简单项目'}, {'id': 16, 'name': 'sample PUT test', 'url': 'http://httpbin.org/put', 'method': 'PUT', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727d2f-76530c934c005e6d46942a18\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/put\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:19:04', 'project_id': '1', 'project_name': '简单项目'}, {'id': 17, 'name': 'sample DELETE test', 'url': 'http://httpbin.org/delete', 'method': 'DELETE', 'header': '{"token":"123"}', 'params_type': 'data', 'params_body': '{"hello":"world"}', 'result': '"{\\n  \\"args\\": {}, \\n  \\"data\\": \\"\\", \\n  \\"files\\": {}, \\n  \\"form\\": {\\n    \\"hello\\": \\"world\\"\\n  }, \\n  \\"headers\\": {\\n    \\"Accept\\": \\"*/*\\", \\n    \\"Accept-Encoding\\": \\"gzip, deflate\\", \\n    \\"Content-Length\\": \\"11\\", \\n    \\"Content-Type\\": \\"application/x-www-form-urlencoded\\", \\n    \\"Host\\": \\"httpbin.org\\", \\n    \\"Token\\": \\"123\\", \\n    \\"User-Agent\\": \\"python-requests/2.25.0\\", \\n    \\"X-Amzn-Trace-Id\\": \\"Root=1-62727d72-34af3e77601bb2b03fbbc1b8\\"\\n  }, \\n  \\"json\\": null, \\n  \\"origin\\": \\"113.87.181.30\\", \\n  \\"url\\": \\"http://httpbin.org/delete\\"\\n}\\n"', 'assert_type': 'include', 'assert_text': 'httpbin.org/delete', 'module_id': 14, 'module_name': '简单接口', 'create_time': '2022-05-04 13:20:22', 'project_id': '1', 'project_name': '简单项目'}]}} 
+
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:57:03 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:57:03 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [type]: json      [time]: 0.360165 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': 'eafef3bc98b0b9d10fcbad3bdf2b4d6d294f768d', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:57:03 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:57:03 log.py | DEBUG | Execute get_project - args: (<quick_public.project.project_v1.Project object at 0x00000193FF7B9F70>,)
+[ 2022-05-17 23:57:03 log.py | DEBUG | Execute get_project - kwargs: {}
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:57:03 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [headers]:
+ {'token': 'eafef3bc98b0b9d10fcbad3bdf2b4d6d294f768d'} 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:57:03 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [type]: json      [time]: 0.045181 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | Execute get_project - response:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}}
+[ 2022-05-17 23:57:03 log.py | INFO | Execute get_project - 查询项目id success!
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:57:03 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/1/moduleTree/ 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [headers]:
+ {'token': 'eafef3bc98b0b9d10fcbad3bdf2b4d6d294f768d'} 
+
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:57:03 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [type]: json      [time]: 0.042343 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 14, 'parent_id': 0, 'label': '简单接口', 'children': []}, {'id': 15, 'parent_id': 0, 'label': '用户管理', 'children': [{'id': 17, 'parent_id': 15, 'label': '注册', 'children': []}, {'id': 18, 'parent_id': 15, 'label': '登录', 'children': []}]}, {'id': 16, 'parent_id': 0, 'label': '项目管理', 'children': []}]} 
+
+[ 2022-05-17 23:57:03 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:57:03 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:57:03 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+[ 2022-05-17 23:57:04 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:57:04 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [type]: json      [time]: 0.365217 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '7e43f3eb0c48e098628223fff8d5de82e24ffd6a', 'User': '{"id": 1, "name": "admin"}'}} 
+
+[ 2022-05-17 23:57:04 log.py | INFO | Execute get_user_token - 获取用户token success!
+[ 2022-05-17 23:57:04 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:57:04 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [headers]:
+ {'token': '7e43f3eb0c48e098628223fff8d5de82e24ffd6a'} 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [params]:
+ {'page': 1, 'size': 6} 
+
+[ 2022-05-17 23:57:04 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:57:04 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [type]: json      [time]: 0.041395 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 11, 'page': 1, 'size': 6, 'projectList': [{'id': 1, 'name': '简单项目', 'describe': '测试功能', 'status': True, 'create_time': '2021-08-22 08:19:09'}, {'id': 2, 'name': '医疗系统', 'describe': '医疗系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 3, 'name': '电商系统', 'describe': '电商系统', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 4, 'name': '商品系统', 'describe': '描述信息2', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 5, 'name': '接口项目3', 'describe': '描述信息3', 'status': True, 'create_time': '2021-08-22 09:09:59'}, {'id': 6, 'name': '接口项目4', 'describe': '描述信息4', 'status': True, 'create_time': '2021-08-22 09:09:59'}]}} 
+
+[ 2022-05-17 23:57:04 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:57:04 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [data]:
+ {'username': '', 'password': '1234'} 
+
+[ 2022-05-17 23:57:04 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:57:04 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [type]: json      [time]: 0.039251 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 23:57:04 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:57:04 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [data]:
+ {'username': 'user', 'password': ''} 
+
+[ 2022-05-17 23:57:04 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:57:04 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [type]: json      [time]: 0.034117 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10010', 'message': '用户名密码为空'}, 'data': []} 
+
+[ 2022-05-17 23:57:04 log.py | INFO | -------------- Request -----------------[🚀]
+[ 2022-05-17 23:57:04 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [data]:
+ {'username': 'error', 'password': 'error'} 
+
+[ 2022-05-17 23:57:04 log.py | INFO | -------------- Response ----------------[🛬️]
+[ 2022-05-17 23:57:04 log.py | INFO | successful with status 200 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [type]: json      [time]: 0.33123 
+
+[ 2022-05-17 23:57:04 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10011', 'message': '用户名密码错误'}, 'data': []} 
+
+[ 2022-05-17 23:57:04 log.py | SUCCESS | generated html file: file:///D:\github\seldom-api-testing\reports\2022_05_17_23_57_02_result.html
+[ 2022-05-17 23:57:04 log.py | SUCCESS | generated log file: file:///D:\github\seldom-api-testing\reports\seldom_log.log

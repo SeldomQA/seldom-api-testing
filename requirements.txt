@@ -1,2 +1,2 @@
-seldom==2.3.3
+seldom==2.9.0
 pymysql==1.0.2
