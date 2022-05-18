@@ -5,14 +5,14 @@ data: 2022/05/17
 import seldom
 from seldom import Seldom, data
 from seldom.request import ResponseResult
+from seldom.utils import genson
 from quick_public.user.user_v1 import UserLogin
 from test_data import UserInfo
-from seldom.utils import genson
 
 
-class TestProjectQuery(seldom.TestCase):
+class TestProjectCreate(seldom.TestCase):
     """
-    测试项目查询
+    测试项目创建
     """
     @classmethod
     def start_class(cls):
