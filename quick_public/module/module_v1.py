@@ -7,7 +7,7 @@ class Module(HttpRequest):
     def __init__(self, user_token):
         self.user_token = user_token
 
-    @check_response("查询模块ID", 200, ret="data[0].id", debug=True)
+    @check_response("查询模块ID", 200, ret="data[0].id")
     def get_module(self, project_id: int = None):
         """
         获取一条模块数据

@@ -4,7 +4,6 @@ data: 2022/05/17
 """
 import seldom
 from seldom import Seldom, data
-from seldom.request import ResponseResult
 from seldom.utils import genson
 from quick_public.user.user_v1 import UserLogin
 from test_data import UserInfo
@@ -39,7 +38,6 @@ class TestProjectCreate(seldom.TestCase):
         # schema = genson(self.response["data"]["projectList"])
         # print("schema:\n", schema)
 
-        ResponseResult.response = self.response["data"]["projectList"]
         assert_data = {
             "$schema": "http://json-schema.org/schema#",
             "type": "array",
@@ -71,4 +69,4 @@ class TestProjectCreate(seldom.TestCase):
                 ]
             }
         }
-        self.assertSchema(assert_data)
+        self.assertSchema(assert_data, self.response["data"]["projectList"])

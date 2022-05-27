@@ -1,7 +1,10 @@
 import seldom
+from seldom.utils import cache
 
 
 if __name__ == "__main__":
+    # 清理缓存
+    cache.clear()
     # 执行测试用例目录
     seldom.main(
         path="./test_dir/",

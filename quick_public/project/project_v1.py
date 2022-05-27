@@ -7,7 +7,7 @@ class Project(HttpRequest):
     def __init__(self, user_token):
         self.user_token = user_token
 
-    @check_response("查询项目id", 200, ret="data.projectList[0].id", debug=True)
+    @check_response("查询项目id", 200, ret="data.projectList[0].id")
     def get_project(self):
         """
         获取一条项目数据

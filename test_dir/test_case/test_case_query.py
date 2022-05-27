@@ -4,8 +4,6 @@ data: 2022/05/17
 """
 import seldom
 from seldom import Seldom
-from seldom.utils import genson
-from seldom.request import ResponseResult
 from quick_public.user.user_v1 import UserLogin
 from quick_public.project.project_v1 import Project
 from quick_public.module.module_v1 import Module
