@@ -1,97 +1,18 @@
 {
-  "debug": [
-    {
-      "scene": "case_params_type_null",
-      "req": {
-        "name": "test GET",
-        "method": "GET",
-        "url": "http://httpbin.org/get",
-        "header": "{\"token\":\"123\"}",
-        "params_type": "",
-        "params_body": "{\"hello\":\"world\"}",
-        "result": "\"\"",
-        "assert_type": "include",
-        "assert_text": "httpbin"
-      },
-      "resp": {
-        "code": "30010",
-        "message": "只支持params/form/json类型"
-      }
-    }
+ "name": [
+    ["Wayne", "Burch"],
+    ["Jamie-louise", "Wong"]
   ],
-  "create_case": [
+  "login":[
     {
-      "scene": "case_all_params_null",
-      "req": {
-        "name": "",
-        "module_id": 14,
-        "method": "",
-        "url": "",
-        "header": "",
-        "params_type": "",
-        "params_body": "",
-        "result": "",
-        "assert_type": "",
-        "assert_text": ""
-      },
-      "resp": {
-        "code": "30010",
-        "message": "This field may not be blank"
-      }
+      "scene": "tom用户登录",
+      "username": "Tom",
+      "password": "tom123"
     },
     {
-      "scene": "case_name_null",
-      "req": {
-        "name": "",
-        "method": "GET",
-        "url": "http://httpbin.org/get",
-        "header": "{\"token\":\"123\"}",
-        "params_type": "params",
-        "params_body": "{\"hello\":\"world\"}",
-        "result": "\"\"",
-        "assert_type": "include",
-        "assert_text": "httpbin"
-      },
-      "resp": {
-        "code": "30010",
-        "message": "This field may not be blank"
-      }
-    },
-    {
-      "scene": "case_method_null",
-      "req": {
-        "name": "test GET",
-        "method": "",
-        "url": "http://httpbin.org/get",
-        "header": "{\"token\":\"123\"}",
-        "params_type": "params",
-        "params_body": "{\"hello\":\"world\"}",
-        "result": "\"\"",
-        "assert_type": "include",
-        "assert_text": "httpbin"
-      },
-      "resp": {
-        "code": "30010",
-        "message": "只支持GET/POST/DELETE/PUT类型"
-      }
-    },
-    {
-      "scene": "case_params_type_null",
-      "req": {
-        "name": "test GET",
-        "method": "GET",
-        "url": "http://httpbin.org/get",
-        "header": "{\"token\":\"123\"}",
-        "params_type": "",
-        "params_body": "{\"hello\":\"world\"}",
-        "result": "\"\"",
-        "assert_type": "include",
-        "assert_text": "httpbin"
-      },
-      "resp": {
-        "code": "30010",
-        "message": "只支持params/form/json类型"
-      }
+      "scene": "jerry用户登录",
+      "username": "Jerry",
+      "password": "jerry123"
     }
   ]
 }

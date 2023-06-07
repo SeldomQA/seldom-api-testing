@@ -1,0 +1,31 @@
+ 2023-06-07 12:13:52 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-06-07 12:13:52 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-06-07 12:13:52 request.py | DEBUG | [params]:
+ {
+  "Tom": "tom123"
+}
+ 2023-06-07 12:13:57 request.py | INFO | -------------- Response ----------------[🛬️]
+ 2023-06-07 12:13:57 request.py | INFO | successful with status 200
+ 2023-06-07 12:13:57 request.py | DEBUG | [type]: json      [time]: 5.461342
+ 2023-06-07 12:13:57 request.py | DEBUG | [response]:
+ {
+  "args": {
+    "Tom": "tom123"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.28.1",
+    "X-Amzn-Trace-Id": "Root=1-64800405-7c3f218e77a4701835600150"
+  },
+  "origin": "113.87.182.102",
+  "url": "https://httpbin.org/get?Tom=tom123"
+}
+ 2023-06-07 12:13:57 case.py | INFO | 👀 assertStatusCode -> 200.
+ 2023-06-07 12:13:57 request.py | INFO | -------------- Request -----------------[🚀]
+ 2023-06-07 12:13:57 request.py | INFO | [method]: GET      [url]: https://httpbin.org/get 
+ 2023-06-07 12:13:57 request.py | DEBUG | [params]:
+ {
+  "Jerry": "jerry123"
+}

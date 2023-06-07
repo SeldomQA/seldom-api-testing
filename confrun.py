@@ -13,14 +13,14 @@ def base_url():
     http test
     api base url
     """
-    return "http://quick.testpub.cn"
+    return "https://httpbin.org"
 
 
 def title():
     """
     setting report title
     """
-    return "Quick接口自动化平台"
+    return "seldom接口自动化测试演示用例"
 
 
 def tester():
