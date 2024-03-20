@@ -1,16 +1,19 @@
+"""
+AOM: https://seldomqa.github.io/api-testing/api_object.html
+"""
 import seldom
-from common.user_login import Common
+from api_object.user_api import UserApiObject
 
 
 class TestRequest(seldom.TestCase):
 
-    def start(self):
-        self.c = Common()
-
-    def test_case(self):
-        # 调用 get_login_user() 获取
-        user = self.c.get_login_user()
-        self.post("http://httpbin.org/post", data={'username': user})
+    def test_user_login(self):
+        """
+        test case
+        """
+        user = UserApiObject()
+        user.user_account_login("tom", "tom123")
+        self.assertPath("form.username", "tom")
         self.assertStatusCode(200)
 
 

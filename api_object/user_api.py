@@ -2,24 +2,26 @@ from seldom.request import check_response
 from seldom.request import HttpRequest
 
 
-class Common(HttpRequest):
+class UserApiObject(HttpRequest):
 
     @check_response(
         describe="获取登录用户名",
         status_code=200,
-        ret="headers.Account",
+        ret="form",
         check={"headers.Host": "httpbin.org"},
         debug=True
     )
-    def get_login_user(self):
+    def user_account_login(self, username, password):
         """
         调用接口获得用户名
+        :param username:
+        :param password:
         """
-        headers = {"Account": "bugmaster"}
-        r = self.get("http://httpbin.org/get", headers=headers)
+        json_data = {"username": username, "password": password}
+        r = self.post("http://httpbin.org/post", data=json_data)
         return r
 
 
 if __name__ == '__main__':
-    c = Common()
-    c.get_login_user()
+    c = UserApiObject()
+    c.user_account_login()
