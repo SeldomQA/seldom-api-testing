@@ -8,7 +8,7 @@
 * 安装 seldom
 
 ```shell
-pip install seldom==3.2.2
+pip install seldom==3.6
 ```
 
 * 运行测试
@@ -41,10 +41,6 @@ D:.
 │   ├───test_base            # 测试用例子目录
 │   │   └───__init__.py
 │   ├───test_data_driver
-│   │   ├───test_file
-│   │   │   └───__init__.py
-│   │   ├───test_func
-│   │   │   └───__init__.py
 │   │   └───__init__.py
 │   ├───test_more
 │   │   └───__init__.py
