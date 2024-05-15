@@ -8,7 +8,7 @@ class TestAssert(seldom.TestCase):
 
     def test_data_assert(self):
         """
-        The JSON data returned by the assertion
+        JSON data assertion.
         :return:
         """
         self.get("/get")
@@ -18,8 +18,7 @@ class TestAssert(seldom.TestCase):
 
     def test_format_assert(self):
         """
-        Assert json-schema
-        help doc: https://json-schema.org/
+        json-schema assertion.
         """
         self.get("/get")
         self.assertStatusCode(200)
@@ -42,8 +41,7 @@ class TestAssert(seldom.TestCase):
 
     def test_path_assert(self):
         """
-        assert jmesPath
-        help doc: https://jmespath.org/
+        JMESPath assertion.
         """
         payload = {"foot": "bread"}
         self.get('/get', params=payload)
