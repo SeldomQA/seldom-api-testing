@@ -1,10 +1,12 @@
+"""
+requests doc: https://requests.readthedocs.io/en/master/
+"""
 import seldom
 
 
 class TestRequest(seldom.TestCase):
     """
     http api test demo
-    doc: https://requests.readthedocs.io/en/master/
     """
 
     def test_put_method(self):

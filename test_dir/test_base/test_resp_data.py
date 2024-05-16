@@ -13,8 +13,8 @@ class TestRespData(seldom.TestCase):
         payload = {'key1': 'value1', 'key2': 'value2'}
         self.post("/post", data=payload)
         self.assertStatusCode(200)
-        self.assertEqual(self.response["form"]["key1"], "value1")
-        self.assertEqual(self.response["form"]["key2"], "value2")
+        self.assertPath("form.key1", "value1")
+        self.assertPath("form.key2", "value2")
 
     def test_data_dependency(self):
         """

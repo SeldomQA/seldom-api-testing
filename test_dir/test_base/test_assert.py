@@ -1,3 +1,9 @@
+"""
+assert method:
+ * assertJSON()
+ * assertSchema()
+ * assertPath()
+"""
 import seldom
 
 
@@ -6,17 +12,16 @@ class TestAssert(seldom.TestCase):
     Test Assert
     """
 
-    def test_data_assert(self):
+    def test_json_assert(self):
         """
         JSON data assertion.
-        :return:
         """
         self.get("/get")
         self.assertStatusCode(200)
         assert_data = {"headers": {"Host": "httpbin.org", "User-Agent": "python-requests/2.26.0"}}
         self.assertJSON(assert_data, exclude=["headers", "user-agent"])  # exclude 过滤掉 json中的部分字段。
 
-    def test_format_assert(self):
+    def test_schema_assert(self):
         """
         json-schema assertion.
         """
