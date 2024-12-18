@@ -7,7 +7,7 @@
 * 安装依赖库
 
 ```shell
-pip install -r requirements.txt
+pip install seldom==3.11.0
 ```
 
 ### 目录结构
@@ -26,11 +26,13 @@ D:.
 │   ├───test_data_driver
 │   ├───test_more
 │   └───...
-├───run.py                  # 运行文件
-└───confrun.py              # 运行配置文件
+├───confrun.py                  # 运行文件
+└───run.py              # 运行配置文件
 ```
 
-### 运行测试
+## 运行测试
+
+### 方式1. `seldom`命令
 
 * `seldom` 命令执行，通过`confrun.py` 文件运行配置。
 
@@ -40,7 +42,9 @@ D:.
 ...
 ````
 
-* `seldom.main()` 方法执行，通过`run.py` 编写运行配置。
+### 方式2. `main()`方法
+
+* 编写 `run.py` 运行文件。
 
 ```python
 # run.py
@@ -50,9 +54,12 @@ if __name__ == '__main__':
     seldom.main(
         path="./test_dir",  # 运行用例目录
         base_url="https://httpbin.org",  # 基础URL地址
-        rerun=3   # 重跑次数
+        rerun=3,   # 重跑次数
+        language="zh-CN"  # 中文报告
     )
 ````
+
+* 运行测试
 
 ```shell
 > python run.py
