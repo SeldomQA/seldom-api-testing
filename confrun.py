@@ -1,11 +1,18 @@
 from seldom.utils import cache
-
+from seldom.logging import log
 
 def start_run():
     """
     Test the hook function before running
     """
+    log.info("running test before")
     cache.clear()
+
+def end_run():
+    """
+    Test the hook function after running
+    """
+    log.info("running test after")
 
 
 def base_url():
