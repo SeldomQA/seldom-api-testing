@@ -5,15 +5,15 @@ import seldom
 from seldom import label, data
 
 
-class TestRequest(seldom.TestCase):
+class TestLabel(seldom.TestCase):
     """
-    http api test demo
+    测试标签
     """
 
     @label("put")
     def test_put_method(self):
         """
-        test put request
+        PUT请求
         """
         self.put('/put', data={'key': 'value'})
         self.assertStatusCode(200)
@@ -21,7 +21,7 @@ class TestRequest(seldom.TestCase):
     @label("post")
     def test_post_method(self):
         """
-        test post request
+        POST请求
         """
         self.post('/post', data={'key':'value'})
         self.assertStatusCode(200)
@@ -31,10 +31,10 @@ class TestRequest(seldom.TestCase):
         ("case_two", "value2"),
         ("case_three", "value3"),
     ])
-    @label("params")
+    @label("get")
     def test_get_method(self, _, value):
         """
-        test get request
+        GET请求，参数化
         """
         payload = {'key': value}
         self.get("/get", params=payload)
